@@ -1,0 +1,10 @@
+{
+  "expected": [
+    {
+      "type": "landmark",
+      "role": "region",
+      "label": "Naughty invisible label",
+      "selector": "body > section"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "expected": [
+    {
+      "type": "landmark",
+      "role": "main",
+      "label": "Slartibartfast",
+      "selector": "body > main"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "expected": [
+    {
+      "type": "landmark",
+      "role": "region",
+      "label": "A Good Region",
+      "selector": "body > div"
+    }
+  ]
+}

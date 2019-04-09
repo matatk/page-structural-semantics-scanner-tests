@@ -1,0 +1,10 @@
+{
+  "expected": [
+    {
+      "type": "landmark",
+      "role": "region",
+      "label": "All About Apples",
+      "selector": "body > section"
+    }
+  ]
+}

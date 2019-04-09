@@ -1,0 +1,10 @@
+{
+  "expected": [
+    {
+      "type": "landmark",
+      "role": "complementary",
+      "label": null,
+      "selector": "body > aside"
+    }
+  ]
+}

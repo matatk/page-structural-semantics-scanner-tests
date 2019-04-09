@@ -1,0 +1,26 @@
+{
+  "name": "page-structural-semantics-scanner-tests",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Test and benchmarking suite for code that extracts information on the structure of web pages, such as landmarks, headings and articles",
+  "license": "MIT",
+  "author": "Matthew Tylee Atkinson",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "tap --no-esm --coverage test",
+    "test:quick": "tap --no-esm test || true"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  },
+  "devDependencies": {
+    "diff": "~4.0",
+    "glob": "~7.1",
+    "husky": "~1.3",
+    "jsdom": "~14.0",
+    "tap": "~12.6"
+  }
+}
