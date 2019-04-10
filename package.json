@@ -1,6 +1,6 @@
 {
   "name": "page-structural-semantics-scanner-tests",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "description": "Test and benchmarking suite for code that extracts information on the structure of web pages, such as landmarks, headings and articles",
   "license": "MIT",
