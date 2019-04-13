@@ -9,7 +9,8 @@
   "scripts": {
     "pretest": "eslint .",
     "test": "tap --no-esm --coverage test",
-    "test:quick": "tap --no-esm test || true"
+    "test:quick": "tap --no-esm test || true",
+    "version": "conventional-changelog-moulded-angular 'Page Structural Semantics Scanner Tests' && git add CHANGELOG.md"
   },
   "husky": {
     "hooks": {
@@ -22,6 +23,7 @@
     "tap": "~12.6"
   },
   "devDependencies": {
+    "conventional-changelog-moulded-angular": "github:matatk/conventional-changelog-moulded-angular#0.2.0",
     "eslint": "~5.16",
     "husky": "~1.3"
   }
