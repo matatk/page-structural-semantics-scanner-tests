@@ -7,6 +7,10 @@
   "author": "Matthew Tylee Atkinson",
   "main": "index.js",
   "scripts": {
+    "_build": "node script/includes.js",
+    "prebuild": "npm test",
+    "build": "npm run _build",
+    "build:quick": "npm run _build",
     "pretest": "eslint .",
     "test": "tap --no-esm --coverage test",
     "test:quick": "tap --no-esm test || true",
@@ -14,7 +18,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test"
+      "pre-commit": "npm run build && git add README.md"
     }
   },
   "dependencies": {

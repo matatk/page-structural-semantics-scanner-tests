@@ -38,22 +38,7 @@ If you don't already have a test environment for your project, you can use the `
 
 and the runner does all the rest: runs the scanner against each fixture and reports if the results didn't match the expectation (using [node-tap](https://github.com/tapjs/node-tap)).
 
-```javascript
-// This file is examples/runner.js
-'use strict'
-const pssst = require('page-structural-semantics-scanner-tests')
-const runner = pssst.runner
-
-const converter = function(expectation) {
-	return expectation  // pass-through
-}
-
-const scanner = function(window, document) {
-	return []  // don't find any landmarks - this will pass some tests
-}
-
-runner(converter, scanner)
-```
+INCLUDE-RUNNER
 
 **Note on global variables:** The tests are run on Node, using a DOM created by [jsdom](https://github.com/jsdom/jsdom). This means that `window` and `document` are not global variables. If your code requires them to be global, you'll need to use the following method instead, for now. An option to run the out-of-the-box suite in a browser is being researched.
 
