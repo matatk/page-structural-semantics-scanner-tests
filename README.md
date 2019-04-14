@@ -1,6 +1,8 @@
 Page Structural Semantics Scanner Tests
 =======================================
 
+[![Build Status](https://travis-ci.com/matatk/page-structural-semantics-scanner-tests.svg?branch=master)](https://travis-ci.com/matatk/page-structural-semantics-scanner-tests)
+
 This is a test and benchmarking suite that can be used to check tools that scan for semantic structural information on web pages, such as landmarks \[with headings and articles in the works\]. Such information is often used to afford or improve the accessibility of pages, allowing people using screen-readers and alternative browsers to navigate and understand the content.
 
 You can use this tool as:
