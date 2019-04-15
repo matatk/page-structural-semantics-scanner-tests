@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "name": "Simple 2"
+  },
   "expected": {
     "expectation": 2
   }

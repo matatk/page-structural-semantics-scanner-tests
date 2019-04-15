@@ -26,8 +26,16 @@ tap.doesNotThrow(function() {
 
 tap.test('iterator gives the code to run the right stuff', t => {
 	const expectedCalls = [
-		['Simple 1', '<p>Simple HTML fixture 1</p>\n', { 'expectation': 1 }],
-		['Simple 2', '<p>Simple HTML fixture 2</p>\n', { 'expectation': 2 }]
+		[
+			{ 'name': 'Simple 1' },
+			'<p>Simple HTML fixture 1</p>\n',
+			{ 'expectation': 1 }
+		],
+		[
+			{ 'name': 'Simple 2' },
+			'<p>Simple HTML fixture 2</p>\n',
+			{ 'expectation': 2 }
+		]
 	]
 
 	const calls = []
