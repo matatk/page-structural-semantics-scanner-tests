@@ -1,3 +1,6 @@
 {
+  "meta": {
+    "name": "article is ignored (not a landmark)"
+  },
   "expected": []
 }

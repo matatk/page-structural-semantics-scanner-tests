@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "name": "Section element with aria-label is recognised"
+  },
   "expected": [
     {
       "type": "landmark",

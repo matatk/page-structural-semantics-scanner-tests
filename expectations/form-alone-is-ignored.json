@@ -1,3 +1,6 @@
 {
+  "meta": {
+    "name": "Unlabelled form is ignored"
+  },
   "expected": []
 }

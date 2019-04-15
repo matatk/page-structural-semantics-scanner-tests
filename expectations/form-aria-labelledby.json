@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "name": "Form with aria-labelledby is recognised"
+  },
   "expected": [
     {
       "type": "landmark",

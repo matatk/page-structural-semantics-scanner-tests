@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "name": "Header with HTML5 hidden attribute directly set is ignored"
+  },
   "expected": [
     {
       "type": "landmark",

@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "name": "ARIA landmark role use example from Steve Faulkner"
+  },
   "expected": [
     {
       "type": "landmark",

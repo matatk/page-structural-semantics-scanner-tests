@@ -1,3 +1,6 @@
 {
+  "meta": {
+    "name": "Unlabelled region is ignored"
+  },
   "expected": []
 }

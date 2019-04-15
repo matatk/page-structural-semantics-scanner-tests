@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "name": "Header hidden with display: none; inline is ignored"
+  },
   "expected": [
     {
       "type": "landmark",

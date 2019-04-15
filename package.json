@@ -8,12 +8,15 @@
   "main": "index.js",
   "scripts": {
     "_build": "node script/includes.js",
+    "post_build": "echo 'Remember to check the example scripts before publishing.'",
     "prebuild": "npm test",
-    "build": "npm run _build",
-    "build:quick": "npm run _build",
-    "pretest": "eslint .",
+    "build": "npm run --silent _build",
+    "build:quick": "npm run --silent _build",
+    "examples": "script/run-all-examples.sh",
+    "pretest": "npm run validate && eslint .",
     "test": "tap --no-esm --coverage test",
     "test:quick": "tap --no-esm test || true",
+    "validate": "ajv test -s schema.json -d 'expectations/*.json' --valid",
     "version": "conventional-changelog-moulded-angular 'Page Structural Semantics Scanner Tests' && git add CHANGELOG.md"
   },
   "husky": {
@@ -27,6 +30,7 @@
     "tap": "~12.6"
   },
   "devDependencies": {
+    "ajv-cli": "~3.0",
     "conventional-changelog-moulded-angular": "github:matatk/conventional-changelog-moulded-angular#0.2.0",
     "eslint": "~5.16",
     "husky": "~1.3"

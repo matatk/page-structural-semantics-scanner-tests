@@ -2,15 +2,15 @@
 const fs = require('fs')
 const path = require('path')
 
-const readme = 'README.md'
-const template = 'README.template.md'
 const out = []
 
 function pathToScript(scriptName) {
 	return path.join('examples', scriptName + '.js')
 }
 
-for (const line of fs.readFileSync(template, 'utf-8').split('\n')) {
+console.log('Inserting example scripts into README...')
+
+for (const line of fs.readFileSync('README.template.md', 'utf-8').split('\n')) {
 	const match = line.match(/^INCLUDE-(\S+)$/)
 	if (match) {
 		const scriptName = match[1].toLowerCase()
@@ -25,4 +25,4 @@ for (const line of fs.readFileSync(template, 'utf-8').split('\n')) {
 	}
 }
 
-fs.writeFileSync(readme, out.join('\n'))
+fs.writeFileSync('README.md', out.join('\n'))

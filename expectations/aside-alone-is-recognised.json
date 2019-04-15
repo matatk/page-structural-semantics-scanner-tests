@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "name": "aside element is recognised"
+  },
   "expected": [
     {
       "type": "landmark",

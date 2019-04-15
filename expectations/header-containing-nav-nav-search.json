@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "name": "Header with nested landmarks, and others are recognised"
+  },
   "expected": [
     {
       "type": "landmark",

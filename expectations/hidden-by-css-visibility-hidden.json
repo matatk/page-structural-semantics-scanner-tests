@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "name": "Footer hidden via visibility: hidden; element selector is ignored"
+  },
   "expected": [
     {
       "type": "landmark",

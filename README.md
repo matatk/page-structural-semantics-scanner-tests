@@ -86,8 +86,8 @@ If you already have a preferred test environment, you could use the exported `it
 const pssst = require('page-structural-semantics-scanner-tests')
 const iterator = pssst.iterator
 
-iterator(function(testName, fixture, expectation) {
-	console.log('========= ' + testName + ' =========')
+iterator(function(meta, fixture, expectation) {
+	console.log('========= ' + meta.name + ' =========')
 	console.log('Fixture:')
 	console.log(fixture)
 	console.log('Expectation:')

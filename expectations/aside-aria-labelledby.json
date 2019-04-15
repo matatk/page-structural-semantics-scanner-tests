@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "name": "aside element with aria-labelledby is recognised"
+  },
   "expected": [
     {
       "type": "landmark",

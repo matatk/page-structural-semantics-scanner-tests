@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "name": "Main element is recognised"
+  },
   "expected": [
     {
       "type": "landmark",

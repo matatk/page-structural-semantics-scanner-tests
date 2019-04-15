@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "name": "Landmark region with two nested landmark siblings"
+  },
   "expected": [
     {
       "type": "landmark",

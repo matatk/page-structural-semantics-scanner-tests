@@ -1,3 +1,6 @@
 {
+  "meta": {
+    "name": "No landmarks - just divs"
+  },
   "expected": []
 }

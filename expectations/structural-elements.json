@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "name": "Structural elemnets test page from Steve Faulkner"
+  },
   "expected": [
     {
       "type": "landmark",

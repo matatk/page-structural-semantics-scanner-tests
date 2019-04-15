@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "name": "WAI-ARIA Digital Publishing roles are recognised"
+  },
   "expected": [
     {
       "type": "landmark",

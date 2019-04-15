@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "name": "aria-labelledby with multiple IDREFs"
+  },
   "expected": [
     {
       "type": "landmark",

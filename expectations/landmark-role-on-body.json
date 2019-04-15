@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "name": "Landmark role on body is recognised"
+  },
   "expected": [
     {
       "type": "landmark",

@@ -1,3 +1,6 @@
 {
+  "meta": {
+    "name": "Unlabelled section element (region implicit role) is ignored"
+  },
   "expected": []
 }

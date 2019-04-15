@@ -1,3 +1,6 @@
 {
+  "meta": {
+    "name": "application role on body element is ignored"
+  },
   "expected": []
 }

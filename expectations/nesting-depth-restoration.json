@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "name": "Check depth of a landmark following a highly-nested landmark"
+  },
   "expected": [
     {
       "type": "landmark",

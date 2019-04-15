@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "name": "aria-labelledby takes precedence over aria-label"
+  },
   "expected": [
     {
       "type": "landmark",

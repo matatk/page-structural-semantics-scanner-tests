@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "name": "Region with aria-labelledby is recognised"
+  },
   "expected": [
     {
       "type": "landmark",

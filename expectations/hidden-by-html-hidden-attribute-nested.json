@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "name": "Header nested within HTML5-hidden div is ignored"
+  },
   "expected": [
     {
       "type": "landmark",

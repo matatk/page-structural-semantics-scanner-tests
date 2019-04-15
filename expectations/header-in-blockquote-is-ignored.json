@@ -1,3 +1,6 @@
 {
+  "meta": {
+    "name": "Header in blockquote is ignored"
+  },
   "expected": []
 }
