@@ -14,6 +14,12 @@ function makeRunner(converter) {
 	}
 }
 
+function makeIterator() {
+	return function(runForEachTest) {
+		iterator(fixtures, expectations, runForEachTest)
+	}
+}
+
 module.exports = {
 	'runner': function(converter, scanner) {
 		runner(tap, fixtures, expectations, converter, scanner)
@@ -23,5 +29,5 @@ module.exports = {
 		'a11yOutline': makeRunner(converters.a11yOutline)
 	},
 	'converters': converters,
-	'iterator': iterator
+	'iterator': makeIterator()
 }

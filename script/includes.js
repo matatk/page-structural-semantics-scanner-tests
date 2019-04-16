@@ -11,7 +11,7 @@ function pathToScript(scriptName) {
 }
 
 for (const line of fs.readFileSync(template, 'utf-8').split('\n')) {
-	const match = line.match(/INCLUDE-(\w+)/)
+	const match = line.match(/^INCLUDE-(\S+)$/)
 	if (match) {
 		const scriptName = match[1].toLowerCase()
 		const scriptPath = pathToScript(scriptName)

@@ -27,16 +27,24 @@ There are three main components that come together in order to test structure-sc
 
 The tool you're testing probably doesn't report results in the same format that the expectations use, so there's also the concept of a **converter** function that takes the expectation object and transforms it into the tool's format. Its signature is `covnerter(expectation: object): object`. Some [converters for known tools](https://github.com/matatk/page-structural-semantics-scanner-tests/blob/master/lib/converters.js) are provided.
 
-You also need a test environment in which to check whether the scanner returns the expected results. This package can be used in three different ways, depending on if you're looking for an out-of-the-box solution, or already have your own test environment.
+You also need a test environment in which to check whether the scanner returns the expected results. This package can be used in three different ways, depending on if you're looking for an out-of-the-box solution, or already have your own test environment:
+
+-   [Out-of-the-box test suite](#out-of-the-box-test-suite)
+-   [Iterating over the tests in your own test environment](#iterating-over-the-tests-in-your-own-test-environment)
+-   [Loading the fixture and expectation files directly](#loading-the-fixture-and-expectation-files-directly)
 
 ### Out-of-the-box test suite
 
-If you don't already have a test environment for your project, you can use the `runner(converter, scanner)` function. You pass in
+If you don't already have a test environment for your project, you can use the `runner(converter, scanner)` function. You pass in:
 
 -   a `converter(expectation: object): object` function, and
 -   the tool's `scanner(window, document): object` function
 
-and the runner does all the rest: runs the scanner against each fixture and reports if the results didn't match the expectation (using [node-tap](https://github.com/tapjs/node-tap)).
+and the runner does the rest:
+
+-   uses the converter on each expectation,
+-   runs the scanner against each fixture, and
+-   reports if the results didn't match the expectation (using [node-tap](https://github.com/tapjs/node-tap)).
 
 ```javascript
 // This file is examples/runner.js
@@ -55,21 +63,42 @@ const scanner = function(window, document) {
 runner(converter, scanner)
 ```
 
-**Note on global variables:** The tests are run on Node, using a DOM created by [jsdom](https://github.com/jsdom/jsdom). This means that `window` and `document` are not global variables. If your code requires them to be global, you'll need to use the following method instead, for now. An option to run the out-of-the-box suite in a browser is being researched.
+**Note on global variables:** The tests are run on Node, using a DOM created by [jsdom](https://github.com/jsdom/jsdom). This means that `window` and `document` are not global variables. If your code requires them to be global, you'll need to use the following iterator method instead, for now. An option to run the out-of-the-box suite in a browser is being researched.
 
-#### Predefined runners for known tools
+**Predefined runners for known tools:** For known tools, such as the [Landmarks browser extension](http://matatk.agrip.org.uk/landmarks/), a converter and custom runner function are exported. Consult [the Landmarks extension's test code](https://github.com/matatk/landmarks/blob/master/test/test-landmarks.js) for an example.
 
-For known tools, such as the [Landmarks browser extension](http://matatk.agrip.org.uk/landmarks/) a converter, and custom runner function, are already supplied. Consult [the Landmarks extension's test code](https://github.com/matatk/landmarks/blob/master/test/test-landmarks.js) for an example.
+#### Runner options \[TBC\]
+
+The following are being considered as options that could be passed to `runner()` in an optional third argument that is an options object.
+
+-   `generateResults`: set to "true" to generate a JSON file summarising the results of each test. This could be used to create an HTML file giving the results of tests for one or more scanner tools.
+-   The following keys would control the environment in which the tests are run.
+    -   `browsers`: "firefox", "chrome", ...
+    -   `jsdom`: set to "true" to run in jsdom on Node (**default**).
 
 ### Iterating over the tests in your own test environment
 
-If you already have a preferred test environment, you could use the exported `iterator()` function to run your test code for each fixture-expectation pair.
+If you already have a preferred test environment, you could use the exported `iterator()` function to run your test code for each fixture-expectation pair. The HTML file is loaded into a string and the expectation into an object.
 
-FIXME
+```javascript
+// This file is examples/iterator.js
+'use strict'
+const pssst = require('page-structural-semantics-scanner-tests')
+const iterator = pssst.iterator
 
-### Using the fixture and expectation files directly
+iterator(function(testName, fixture, expectation) {
+	console.log('========= ' + testName + ' =========')
+	console.log('Fixture:')
+	console.log(fixture)
+	console.log('Expectation:')
+	console.log(JSON.stringify(expectation, null, 2))
+	console.log()
+})
+```
 
-You could also load the various fixture and expectation files directly, and not use any of the above code.
+### Loading the fixture and expectation files directly
+
+You could also read the various fixture and expectation files directly, and not use any of the above code.
 
 Use as a benchmarking tool
 --------------------------
