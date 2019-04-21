@@ -7,8 +7,8 @@ const fixturesDir = path.join(__dirname, '..', 'fixtures')
 const expectationsDir = path.join(__dirname, '..', 'expectations')
 
 const combinedDir = path.join(__dirname, '..', 'combined')
-const allFixturesFile = path.join(combinedDir, 'all-fixtures.html')
-const allExpectationsFile = path.join(combinedDir, 'all-expectations.json')
+const allFixturesFile = path.join(combinedDir, 'fixtures.html')
+const allExpectationsFile = path.join(combinedDir, 'expectations.json')
 
 const combined = combine(fixturesDir, expectationsDir)
 
