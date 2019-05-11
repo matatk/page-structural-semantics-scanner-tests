@@ -35,7 +35,7 @@
         },
         {
           "type": "landmark",
-          "role": "doc-acknowledgements",
+          "role": "doc-acknowledgments",
           "label": null,
           "selector": "body > div:nth-child(3) > div:nth-child(5)"
         },
