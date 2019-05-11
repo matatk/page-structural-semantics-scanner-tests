@@ -98,7 +98,12 @@ iterator(function(meta, fixture, expectation) {
 
 ### Loading the fixture and expectation files directly
 
-You could also read the various fixture and expectation files directly, and not use any of the above code.
+The fixtures and expectations are provided in two formats:
+
+ * Individual fixtures and expectations can be found in the "fixtures/" and "expectations/" directories. These files are useful when running the tests from Node.
+ * A combined fixture file, containing all but two of the tests, can be found alongside a combined expectation file, in the "combined/" directory. These may be useful if your test runner runs inside a browser. The HTML file contains only the fixtures, in a series of `<div>` elements; it is not a fully-formed HTML document.
+
+The reason why the combined files don't contain all of the test fixtures is that two ("application-alone-on-body-is-ignored" and "landmark-role-on-body") require an ARIA `role` attribute to be set on the `<body>` element.
 
 Use as a benchmarking tool
 --------------------------

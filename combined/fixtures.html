@@ -1,0 +1,392 @@
+<div data-test-id="aria-labelledby-multiple-idrefs">
+		<header>
+			<h1 id="site-title">World of wombats</h1>
+			<nav aria-labelledby="site-title">
+				<p>(Site navigation links.)</p>
+			</nav>
+		</header>
+		<main aria-labelledby="page-title">
+			<h2 id="page-title">Looking after your wombat</h2>
+
+			<nav aria-labelledby="page-title page-navigation">
+				<h3 id="page-navigation">Topics</h3>
+				<ul>
+					<li><a href="#eat">What do wombats like to eat?</a></li>
+					<li><a href="#sleep">How much do wombats sleep?</a></li>
+				</ul>
+			</nav>
+
+			<h3 id="eat">What do wombats like to eat?</h3>
+			<p>Things</p>
+
+			<h3 id="sleep">How much do wombats sleep?</h3>
+			<p>A bit</p>
+		</main>
+		<footer>
+			Footer
+		</footer>
+	</div>
+<div data-test-id="article-is-ignored">
+		<article>
+			<p>Articles should be ignored.</p>
+		</article>
+	</div>
+<div data-test-id="aside-alone-is-recognised">
+		<aside>
+			<p>An aside maps to a complementary region.</p>
+		</aside>
+	</div>
+<div data-test-id="aside-aria-labelledby">
+		<aside aria-labelledby="aside-heading">
+			<h1 id="aside-heading">And another thing...</h1>
+			<p>An aside maps to a complementary region.</p>
+		</aside>
+	</div>
+<div data-test-id="digital-publishing-roles">
+		<h1>Example Book</h1>
+		<p>This isn't necessarily the best way to mark up a book (the parts should be more semantically and user-visible, i.e. via visible headings, with a correctly-nested hierarchy, and <code>aria-labelledby</code>), but the way it's done here does provide a way to test various features of the extension with these landmark roles.</p>
+
+		<div role="doc-part" aria-label="Frontmatter">
+			<nav role="doc-toc">
+				<h2>Table of Contents</h2>
+				<p>&hellip;</p>
+			</nav>
+
+			<nav role="doc-pagelist">
+				<h2>Pagelist</h2>
+				<p>&hellip;</p>
+			</nav>
+
+			<div role="doc-preface">
+				<h2>Preface</h2>
+				<p>&hellip;</p>
+			</div>
+
+			<div role="doc-foreword">
+				<h2>Foreword</h2>
+				<p>&hellip;</p>
+			</div>
+
+			<div role="doc-acknowledgements">
+				<h2>Acknowledgements</h2>
+				<p>&hellip;</p>
+			</div>
+
+			<div role="doc-prologue">
+				<h2>Prologue</h2>
+				<p>&hellip;</p>
+			</div>
+
+			<div role="doc-introduction">
+				<h2>Introduction</h2>
+				<p>&hellip;</p>
+			</div>
+		</div>
+
+		<div role="doc-part" aria-label="Mainmatter">
+			<section role="doc-chapter" aria-labelledby="head-chapter-1">
+				<h2 id="head-chapter-1">Beginnings</h2>
+				<p>&hellip;</p>
+			</section>
+
+			<section role="doc-chapter" aria-labelledby="head-chapter-2">
+				<h2 id="head-chapter-2">Middles</h2>
+				<p>&hellip;</p>
+			</section>
+
+			<section role="doc-chapter" aria-labelledby="head-chapter-3">
+				<h2 id="head-chapter-3">Endings</h2>
+				<p>&hellip;</p>
+			</section>
+
+			<section role="doc-conclusion">
+				<h2>Conclusion</h2>
+				<p>The end.</p>
+			</section>
+		</div>
+
+		<div role="doc-part" aria-label="Backmatter">
+			<div role="doc-epilogue">
+				<h2>Epilogue</h2>
+				<p>&hellip;</p>
+			</div>
+
+			<div role="doc-afterword">
+				<h2>Afterword</h2>
+				<p>And so it was&hellip;</p>
+			</div>
+
+			<div role="doc-endnotes">
+				<h2>Endnotes</h2>
+				<p>&hellip;</p>
+			</div>
+
+			<div role="doc-bibliography" aria-labelledby="head-bibliography">
+				<h2 id="head-bibliography">References</h2>
+				<p>To what we referred.</p>
+			</div>
+
+			<dl role="doc-glossary">
+				<dt role="term">Slartibartfast</dt>
+				<dd role="definition">A name that is not important.</dd>
+			</dl>
+
+			<nav role="doc-index">
+				<h2>Index</h2>
+				<p>&hellip;</p>
+			</nav>
+
+			<div role="doc-credits">
+				<h2>Credits</h2>
+				<ul>
+					<li>Someone</li>
+					<li>Something</li>
+				</ul>
+			</div>
+
+			<div role="doc-errata">
+				<h2>Errata</h2>
+				<p>&hellip;</p>
+			</div>
+
+			<div role="doc-appendix" aria-labelledby="head-appendix-a">
+				<h2 id="head-appendix-a">Technical specification</h2>
+				<p>Like in the Amiga manual :-).</p>
+			</div>
+
+			<div role="doc-appendix" aria-labelledby="head-appendix-b">
+				<h2 id="head-appendix-b">Detailed schematics</h2>
+				<p>Like in the Amiga manual :-).</p>
+			</div>
+		</div>
+	</div>
+<div data-test-id="footer-in-blockquote-is-ignored">
+		<blockquote>
+			<p>Content</p>
+			<footer>
+				<p>Attribution</p>
+			</footer>
+		</blockquote>
+	</div>
+<div data-test-id="form-alone-is-ignored">
+		<form action="blah">
+			<p>The form with no name.</p>
+		</form>
+	</div>
+<div data-test-id="form-aria-label">
+		<form action="blah" aria-label="Contact Us">
+			<p>A form with a name.</p>
+		</form>
+	</div>
+<div data-test-id="form-aria-labelledby">
+		<form action="blah" aria-labelledby="form-heading">
+			<h1 id="form-heading">Report a Fault</h1>
+			<p>A form with a visible name for all folk!</p>
+		</form>
+	</div>
+<div data-test-id="header-containing-nav-nav-search">
+		<header>
+			Page Header
+			<nav>
+				Navigation 1
+			</nav>
+			<nav>
+				Navigation 2
+				<div role="search">
+					Finder
+				</div>
+			</nav>
+		</header>
+		<main>
+			Content
+		</main>
+		<footer>
+			The End
+		</footer>
+	</div>
+<div data-test-id="header-in-blockquote-is-ignored">
+		<blockquote>
+			<header>
+				<h1>Attention</h1>
+			</header>
+			<p>Content</p>
+		</blockquote>
+	</div>
+<div data-test-id="hidden-by-css-display-none-inline">
+		<header style="display: none;">
+			<h1>Visually-hidden header</h1>
+		</header>
+		<main>
+			<p>Main content</p>
+		</main>
+	</div>
+<div data-test-id="hidden-by-css-display-none-nested">
+		<div class="hide">
+			<header>
+				<h1>Visually-hidden header</h1>
+			</header>
+		</div>
+		<main>
+			<p>Main content</p>
+		</main>
+	</div>
+<div data-test-id="hidden-by-css-display-none">
+		<header>
+			<h1>Visually-hidden header</h1>
+		</header>
+		<main>
+			<p>Main content</p>
+		</main>
+	</div>
+<div data-test-id="hidden-by-css-visibility-hidden">
+		<main>
+			<p>Main content</p>
+		</main>
+		<footer>
+			<p>Visually-hidden footer</p>
+		</footer>
+	</div>
+<div data-test-id="hidden-by-html-hidden-attribute-nested">
+		<div hidden>
+			<header>
+				<h1>Visually-hidden header</h1>
+			</header>
+		</div>
+		<main>
+			<p>Main content</p>
+		</main>
+	</div>
+<div data-test-id="hidden-by-html-hidden-attribute">
+		<header hidden>
+			<h1>Visually-hidden header</h1>
+		</header>
+		<main>
+			<p>Main content</p>
+		</main>
+	</div>
+<div data-test-id="main-alone-is-recognised">
+		<main>
+			<p>Main content</p>
+		</main>
+	</div>
+<div data-test-id="main-aria-label">
+		<main aria-label="Slartibartfast">
+			<p>Main content</p>
+		</main>
+	</div>
+<div data-test-id="main-aria-labelledby">
+		<main aria-labelledby="main-name">
+			<h1 id="main-name">Kate</h1>
+			<p>Main content</p>
+		</main>
+	</div>
+<div data-test-id="nested-siblings">
+		<main>
+			<div>
+				<div role="region" aria-label="Sibling One"></div>
+			</div>
+			<div>
+				<div role="region" aria-label="Sibling Two"></div>
+			</div>
+		</main>
+	</div>
+<div data-test-id="nesting-depth-restoration">
+	<header>
+		<h1>Nesting Depth Restoration</h1>
+	</header>
+	<main>
+		<h2>Main</h2>
+		<p>Top-level content.</p>
+		<section aria-labelledby="outer-section-header">
+			<h3 id="outer-section-header">Outer section header</h3>
+			<p>Section within main.</p>
+			<section aria-labelledby="inner-section-header">
+				<h4 id="inner-section-header">Inner section header</h4>
+				<p>Section inside the section within main.</p>
+			</section>
+		</section>
+	</main>
+	<footer>
+		<p>Footer</p>
+	</footer>
+</div>
+<div data-test-id="no-landmarks-just-divs">
+		<div id="header">
+			<h1>Heading</h1>
+		</div>
+		<div id="main">
+			<p>Content</p>
+		</div>
+		<div id="footer">
+			<p>Attribution</p>
+		</div>
+	</div>
+<div data-test-id="prefer-aria-labelledby">
+		<main aria-labelledby="main-name" aria-label="Bob">
+			<h1 id="main-name">Kate</h1>
+			<p>Say my name.</p>
+		</main>
+	</div>
+<div data-test-id="region-alone-is-ignored">
+		<div role="region">
+			<p>A region with no name is not.</p>
+		</div>
+	</div>
+<div data-test-id="region-aria-label">
+		<div role="region" aria-label="Reluctant Region">
+			<p>A region with an invisible name is reluctant.</p>
+		</section>
+	</div>
+<div data-test-id="region-aria-labelledby">
+		<div role="region" aria-labelledby="region-heading">
+			<h1 id="region-heading">A Good Region</h1>
+			<p>A region with a visible name is grand.</p>
+		</div>
+	</div>
+<div data-test-id="roles-land">
+<div id="banner" role="banner">banner</div>
+<div id="navigation" role="navigation">navigation</div>
+<div id="main" role="main">main
+<div role="application" id="application">application</div> 
+</div>
+<div id="complementary" role="complementary"> complementary
+<div role="form" id="form"> form
+<div id="search" role="search">search</div>
+</div></div>
+<div id="contentinfo" role="contentinfo">contentinfo</div>
+
+</div>
+<div data-test-id="section-alone-is-ignored">
+		<section>
+			<p>The section with no name.</p>
+		</section>
+	</div>
+<div data-test-id="section-aria-label">
+		<section aria-label="Naughty invisible label">
+			<p>A section with an invisible name.</p>
+		</section>
+	</div>
+<div data-test-id="section-aria-labelledby">
+		<section aria-labelledby="section-heading">
+			<h1 id="section-heading">All About Apples</h1>
+			<p>A section with a twee visible name for all folk.</p>
+		</section>
+	</div>
+<div data-test-id="structural-elements">
+<header> this is a header </header>
+<aside> this is an aside </aside>
+<nav> this is a nav </nav>
+<main>this is the main <a href="#">content</a>
+<section> 
+<header> this is a header inside a section </header>
+this is a section
+<footer> this is a footer inside a section</footer>
+</section>
+<article> 
+<header> this is a header inside an article </header>
+this is an article
+<footer> this is a footer inside an article</footer>
+</section></article>
+</main>
+<footer> this is a footer</footer>
+</div>

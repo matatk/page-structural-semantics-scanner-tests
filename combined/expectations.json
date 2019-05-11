@@ -1,0 +1,673 @@
+{
+  "aria-labelledby-multiple-idrefs": {
+    "meta": {
+      "name": "aria-labelledby with multiple IDREFs"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "banner",
+        "label": null,
+        "selector": "body > header",
+        "contains": [
+          {
+            "type": "landmark",
+            "role": "navigation",
+            "label": "World of wombats",
+            "selector": "body > header > nav"
+          }
+        ]
+      },
+      {
+        "type": "landmark",
+        "role": "main",
+        "label": "Looking after your wombat",
+        "selector": "body > main",
+        "contains": [
+          {
+            "type": "landmark",
+            "role": "navigation",
+            "label": "Looking after your wombat Topics",
+            "selector": "body > main > nav:nth-child(2)"
+          }
+        ]
+      },
+      {
+        "type": "landmark",
+        "role": "contentinfo",
+        "label": null,
+        "selector": "body > footer"
+      }
+    ]
+  },
+  "article-is-ignored": {
+    "meta": {
+      "name": "article is ignored (not a landmark)"
+    },
+    "expected": []
+  },
+  "aside-alone-is-recognised": {
+    "meta": {
+      "name": "aside element is recognised"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "complementary",
+        "label": null,
+        "selector": "body > aside"
+      }
+    ]
+  },
+  "aside-aria-labelledby": {
+    "meta": {
+      "name": "aside element with aria-labelledby is recognised"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "complementary",
+        "label": "And another thing...",
+        "selector": "body > aside"
+      }
+    ]
+  },
+  "digital-publishing-roles": {
+    "meta": {
+      "name": "WAI-ARIA Digital Publishing roles are recognised"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "doc-part",
+        "label": "Frontmatter",
+        "selector": "body > div:nth-child(3)",
+        "contains": [
+          {
+            "type": "landmark",
+            "role": "doc-toc",
+            "label": null,
+            "selector": "body > div:nth-child(3) > nav:nth-child(1)"
+          },
+          {
+            "type": "landmark",
+            "role": "doc-pagelist",
+            "label": null,
+            "selector": "body > div:nth-child(3) > nav:nth-child(2)"
+          },
+          {
+            "type": "landmark",
+            "role": "doc-preface",
+            "label": null,
+            "selector": "body > div:nth-child(3) > div:nth-child(3)"
+          },
+          {
+            "type": "landmark",
+            "role": "doc-foreword",
+            "label": null,
+            "selector": "body > div:nth-child(3) > div:nth-child(4)"
+          },
+          {
+            "type": "landmark",
+            "role": "doc-acknowledgements",
+            "label": null,
+            "selector": "body > div:nth-child(3) > div:nth-child(5)"
+          },
+          {
+            "type": "landmark",
+            "role": "doc-prologue",
+            "label": null,
+            "selector": "body > div:nth-child(3) > div:nth-child(6)"
+          },
+          {
+            "type": "landmark",
+            "role": "doc-introduction",
+            "label": null,
+            "selector": "body > div:nth-child(3) > div:nth-child(7)"
+          }
+        ]
+      },
+      {
+        "type": "landmark",
+        "role": "doc-part",
+        "label": "Mainmatter",
+        "selector": "body > div:nth-child(4)",
+        "contains": [
+          {
+            "type": "landmark",
+            "role": "doc-chapter",
+            "label": "Beginnings",
+            "selector": "body > div:nth-child(4) > section:nth-child(1)"
+          },
+          {
+            "type": "landmark",
+            "role": "doc-chapter",
+            "label": "Middles",
+            "selector": "body > div:nth-child(4) > section:nth-child(2)"
+          },
+          {
+            "type": "landmark",
+            "role": "doc-chapter",
+            "label": "Endings",
+            "selector": "body > div:nth-child(4) > section:nth-child(3)"
+          },
+          {
+            "type": "landmark",
+            "role": "doc-conclusion",
+            "label": null,
+            "selector": "body > div:nth-child(4) > section:nth-child(4)"
+          }
+        ]
+      },
+      {
+        "type": "landmark",
+        "role": "doc-part",
+        "label": "Backmatter",
+        "selector": "body > div:nth-child(5)",
+        "contains": [
+          {
+            "type": "landmark",
+            "role": "doc-epilogue",
+            "label": null,
+            "selector": "body > div:nth-child(5) > div:nth-child(1)"
+          },
+          {
+            "type": "landmark",
+            "role": "doc-afterword",
+            "label": null,
+            "selector": "body > div:nth-child(5) > div:nth-child(2)"
+          },
+          {
+            "type": "landmark",
+            "role": "doc-endnotes",
+            "label": null,
+            "selector": "body > div:nth-child(5) > div:nth-child(3)"
+          },
+          {
+            "type": "landmark",
+            "role": "doc-bibliography",
+            "label": "References",
+            "selector": "body > div:nth-child(5) > div:nth-child(4)"
+          },
+          {
+            "type": "landmark",
+            "role": "doc-glossary",
+            "label": null,
+            "selector": "body > div:nth-child(5) > dl:nth-child(5)"
+          },
+          {
+            "type": "landmark",
+            "role": "doc-index",
+            "label": null,
+            "selector": "body > div:nth-child(5) > nav:nth-child(6)"
+          },
+          {
+            "type": "landmark",
+            "role": "doc-credits",
+            "label": null,
+            "selector": "body > div:nth-child(5) > div:nth-child(7)"
+          },
+          {
+            "type": "landmark",
+            "role": "doc-errata",
+            "label": null,
+            "selector": "body > div:nth-child(5) > div:nth-child(8)"
+          },
+          {
+            "type": "landmark",
+            "role": "doc-appendix",
+            "label": "Technical specification",
+            "selector": "body > div:nth-child(5) > div:nth-child(9)"
+          },
+          {
+            "type": "landmark",
+            "role": "doc-appendix",
+            "label": "Detailed schematics",
+            "selector": "body > div:nth-child(5) > div:nth-child(10)"
+          }
+        ]
+      }
+    ]
+  },
+  "footer-in-blockquote-is-ignored": {
+    "meta": {
+      "name": "Footer in blockquote is ignored"
+    },
+    "expected": []
+  },
+  "form-alone-is-ignored": {
+    "meta": {
+      "name": "Unlabelled form is ignored"
+    },
+    "expected": []
+  },
+  "form-aria-label": {
+    "meta": {
+      "name": "Form with aria-label is recognised"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "form",
+        "label": "Contact Us",
+        "selector": "body > form"
+      }
+    ]
+  },
+  "form-aria-labelledby": {
+    "meta": {
+      "name": "Form with aria-labelledby is recognised"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "form",
+        "label": "Report a Fault",
+        "selector": "body > form"
+      }
+    ]
+  },
+  "header-containing-nav-nav-search": {
+    "meta": {
+      "name": "Header with nested landmarks, and others are recognised"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "banner",
+        "label": null,
+        "selector": "body > header",
+        "contains": [
+          {
+            "type": "landmark",
+            "role": "navigation",
+            "label": null,
+            "selector": "body > header > nav:nth-child(1)"
+          },
+          {
+            "type": "landmark",
+            "role": "navigation",
+            "label": null,
+            "selector": "body > header > nav:nth-child(2)",
+            "contains": [
+              {
+                "type": "landmark",
+                "role": "search",
+                "label": null,
+                "selector": "body > header > nav:nth-child(2) > div"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "landmark",
+        "role": "main",
+        "label": null,
+        "selector": "body > main"
+      },
+      {
+        "type": "landmark",
+        "role": "contentinfo",
+        "label": null,
+        "selector": "body > footer"
+      }
+    ]
+  },
+  "header-in-blockquote-is-ignored": {
+    "meta": {
+      "name": "Header in blockquote is ignored"
+    },
+    "expected": []
+  },
+  "hidden-by-css-display-none-inline": {
+    "meta": {
+      "name": "Header hidden with display: none; inline is ignored"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "main",
+        "label": null,
+        "selector": "body > main"
+      }
+    ]
+  },
+  "hidden-by-css-display-none-nested": {
+    "meta": {
+      "name": "Header hidden inside a display: none; container is ignored"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "main",
+        "label": null,
+        "selector": "body > main"
+      }
+    ]
+  },
+  "hidden-by-css-display-none": {
+    "meta": {
+      "name": "Header hidden with display: none; via an element selector is ignored"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "main",
+        "label": null,
+        "selector": "body > main"
+      }
+    ]
+  },
+  "hidden-by-css-visibility-hidden": {
+    "meta": {
+      "name": "Footer hidden via visibility: hidden; element selector is ignored"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "main",
+        "label": null,
+        "selector": "body > main"
+      }
+    ]
+  },
+  "hidden-by-html-hidden-attribute-nested": {
+    "meta": {
+      "name": "Header nested within HTML5-hidden div is ignored"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "main",
+        "label": null,
+        "selector": "body > main"
+      }
+    ]
+  },
+  "hidden-by-html-hidden-attribute": {
+    "meta": {
+      "name": "Header with HTML5 hidden attribute directly set is ignored"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "main",
+        "label": null,
+        "selector": "body > main"
+      }
+    ]
+  },
+  "main-alone-is-recognised": {
+    "meta": {
+      "name": "Main element is recognised"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "main",
+        "label": null,
+        "selector": "body > main"
+      }
+    ]
+  },
+  "main-aria-label": {
+    "meta": {
+      "name": "Main element with aria-label is recognised"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "main",
+        "label": "Slartibartfast",
+        "selector": "body > main"
+      }
+    ]
+  },
+  "main-aria-labelledby": {
+    "meta": {
+      "name": "Main element with aria-labelledby is recognised"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "main",
+        "label": "Kate",
+        "selector": "body > main"
+      }
+    ]
+  },
+  "nested-siblings": {
+    "meta": {
+      "name": "Landmark region with two nested landmark siblings"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "main",
+        "label": null,
+        "selector": "body > main",
+        "contains": [
+          {
+            "type": "landmark",
+            "role": "region",
+            "label": "Sibling One",
+            "selector": "body > main > div:nth-child(1) > div"
+          },
+          {
+            "type": "landmark",
+            "role": "region",
+            "label": "Sibling Two",
+            "selector": "body > main > div:nth-child(2) > div"
+          }
+        ]
+      }
+    ]
+  },
+  "nesting-depth-restoration": {
+    "meta": {
+      "name": "Check depth of a landmark following a highly-nested landmark"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "banner",
+        "label": null,
+        "selector": "body > header"
+      },
+      {
+        "type": "landmark",
+        "role": "main",
+        "label": null,
+        "selector": "body > main",
+        "contains": [
+          {
+            "type": "landmark",
+            "role": "region",
+            "label": "Outer section header",
+            "selector": "body > main > section",
+            "contains": [
+              {
+                "type": "landmark",
+                "role": "region",
+                "label": "Inner section header",
+                "selector": "body > main > section > section"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "landmark",
+        "role": "contentinfo",
+        "label": null,
+        "selector": "body > footer"
+      }
+    ]
+  },
+  "no-landmarks-just-divs": {
+    "meta": {
+      "name": "No landmarks - just divs"
+    },
+    "expected": []
+  },
+  "prefer-aria-labelledby": {
+    "meta": {
+      "name": "aria-labelledby takes precedence over aria-label"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "main",
+        "label": "Kate",
+        "selector": "body > main"
+      }
+    ]
+  },
+  "region-alone-is-ignored": {
+    "meta": {
+      "name": "Unlabelled region is ignored"
+    },
+    "expected": []
+  },
+  "region-aria-label": {
+    "meta": {
+      "name": "Region with aria-label is recognised"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "region",
+        "label": "Reluctant Region",
+        "selector": "body > div"
+      }
+    ]
+  },
+  "region-aria-labelledby": {
+    "meta": {
+      "name": "Region with aria-labelledby is recognised"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "region",
+        "label": "A Good Region",
+        "selector": "body > div"
+      }
+    ]
+  },
+  "roles-land": {
+    "meta": {
+      "name": "ARIA landmark role use example from Steve Faulkner"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "banner",
+        "label": null,
+        "selector": "#banner"
+      },
+      {
+        "type": "landmark",
+        "role": "navigation",
+        "label": null,
+        "selector": "#navigation"
+      },
+      {
+        "type": "landmark",
+        "role": "main",
+        "label": null,
+        "selector": "#main"
+      },
+      {
+        "type": "landmark",
+        "role": "complementary",
+        "label": null,
+        "selector": "#complementary",
+        "contains": [
+          {
+            "type": "landmark",
+            "role": "search",
+            "label": null,
+            "selector": "#search"
+          }
+        ]
+      },
+      {
+        "type": "landmark",
+        "role": "contentinfo",
+        "label": null,
+        "selector": "#contentinfo"
+      }
+    ]
+  },
+  "section-alone-is-ignored": {
+    "meta": {
+      "name": "Unlabelled section element (region implicit role) is ignored"
+    },
+    "expected": []
+  },
+  "section-aria-label": {
+    "meta": {
+      "name": "Section element with aria-label is recognised"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "region",
+        "label": "Naughty invisible label",
+        "selector": "body > section"
+      }
+    ]
+  },
+  "section-aria-labelledby": {
+    "meta": {
+      "name": "Section element with aria-labelledby is recognised"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "region",
+        "label": "All About Apples",
+        "selector": "body > section"
+      }
+    ]
+  },
+  "structural-elements": {
+    "meta": {
+      "name": "Structural elemnets test page from Steve Faulkner"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "banner",
+        "label": null,
+        "selector": "body > header"
+      },
+      {
+        "type": "landmark",
+        "role": "complementary",
+        "label": null,
+        "selector": "body > aside"
+      },
+      {
+        "type": "landmark",
+        "role": "navigation",
+        "label": null,
+        "selector": "body > nav"
+      },
+      {
+        "type": "landmark",
+        "role": "main",
+        "label": null,
+        "selector": "body > main"
+      },
+      {
+        "type": "landmark",
+        "role": "contentinfo",
+        "label": null,
+        "selector": "body > footer"
+      }
+    ]
+  }
+}

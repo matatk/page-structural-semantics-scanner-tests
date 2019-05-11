@@ -7,7 +7,7 @@
   "author": "Matthew Tylee Atkinson",
   "main": "index.js",
   "scripts": {
-    "_build": "node script/includes.js",
+    "_build": "node script/includes.js && node script/combineFixturesExpectations.js",
     "post_build": "echo 'Remember to check the example scripts before publishing.'",
     "prebuild": "npm test",
     "build": "npm run --silent _build",
