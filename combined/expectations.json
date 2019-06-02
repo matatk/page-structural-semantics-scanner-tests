@@ -267,6 +267,19 @@
       }
     ]
   },
+  "form-unlabelled-with-explicit-role": {
+    "meta": {
+      "name": "Form with no label, but an explicit role, is recognised"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "form",
+        "label": "null",
+        "selector": "body > div"
+      }
+    ]
+  },
   "header-containing-nav-nav-search": {
     "meta": {
       "name": "Header with nested landmarks, and others are recognised"
@@ -585,6 +598,12 @@
         "label": null,
         "selector": "#complementary",
         "contains": [
+          {
+            "type": "landmark",
+            "role": "form",
+            "label": null,
+            "selector": "#form"
+          },
           {
             "type": "landmark",
             "role": "search",

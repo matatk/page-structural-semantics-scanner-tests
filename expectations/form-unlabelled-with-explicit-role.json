@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "name": "Form with no label, but an explicit role, is recognised"
+  },
+  "expected": [
+    {
+      "type": "landmark",
+      "role": "form",
+      "label": "null",
+      "selector": "body > div"
+    }
+  ]
+}
