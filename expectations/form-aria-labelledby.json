@@ -1,6 +1,12 @@
 {
   "meta": {
-    "name": "Form with aria-labelledby is recognised"
+    "name": "Form with aria-labelledby is recognised",
+    "links": [
+      {
+        "url": "https://github.com/matatk/page-structural-semantics-scanner-tests/issues/2#issuecomment-497938545",
+        "text": "Overall info on forms and regions"
+      }
+    ]
   },
   "expected": [
     {
