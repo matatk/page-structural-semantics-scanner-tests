@@ -168,11 +168,6 @@
 			</footer>
 		</blockquote>
 	</div>
-<div data-test-id="form-alone-is-ignored">
-		<form action="blah">
-			<p>The form with no name.</p>
-		</form>
-	</div>
 <div data-test-id="form-aria-label">
 		<form action="blah" aria-label="Contact Us">
 			<p>A form with a name.</p>
@@ -182,6 +177,11 @@
 		<form action="blah" aria-labelledby="form-heading">
 			<h1 id="form-heading">Report a Fault</h1>
 			<p>A form with a visible name for all folk!</p>
+		</form>
+	</div>
+<div data-test-id="form-element-alone-is-ignored">
+		<form action="blah">
+			<p>The form with no name.</p>
 		</form>
 	</div>
 <div data-test-id="form-unlabelled-with-explicit-role">

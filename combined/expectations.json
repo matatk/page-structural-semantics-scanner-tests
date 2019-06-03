@@ -235,18 +235,6 @@
     },
     "expected": []
   },
-  "form-alone-is-ignored": {
-    "meta": {
-      "name": "Unlabelled form is ignored",
-      "links": [
-        {
-          "url": "https://github.com/matatk/page-structural-semantics-scanner-tests/issues/2#issuecomment-497938545",
-          "text": "Overall info on forms and regions"
-        }
-      ]
-    },
-    "expected": []
-  },
   "form-aria-label": {
     "meta": {
       "name": "Form with aria-label is recognised",
@@ -284,6 +272,18 @@
         "selector": "body > form"
       }
     ]
+  },
+  "form-element-alone-is-ignored": {
+    "meta": {
+      "name": "Unlabelled <form> element is ignored",
+      "links": [
+        {
+          "url": "https://github.com/matatk/page-structural-semantics-scanner-tests/issues/2#issuecomment-497938545",
+          "text": "Overall info on forms and regions"
+        }
+      ]
+    },
+    "expected": []
   },
   "form-unlabelled-with-explicit-role": {
     "meta": {
