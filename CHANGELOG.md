@@ -1,5 +1,11 @@
 # Page Structural Semantics Scanner Tests changelog
 
+## [0.2.1](https://github.com/matatk/page-structural-semantics-scanner-tests/compare/0.2.0...0.2.1) (2019-06-03)
+
+### Bug fixes
+
+* Explicit form regions should not be ignored ([#8](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/8)) ([93f3dc1](https://github.com/matatk/page-structural-semantics-scanner-tests/commit/93f3dc1)), closes [/github.com/matatk/page-structural-semantics-scanner-tests/issues/2#issuecomment-497938545](https://github.com//github.com/matatk/page-structural-semantics-scanner-tests/issues/2/issues/issuecomment-497938545) [#2](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/2)
+
 ## [0.2.0](https://github.com/matatk/page-structural-semantics-scanner-tests/compare/0.1.1...0.2.0) (2019-05-11)
 
 ### Bug fixes
