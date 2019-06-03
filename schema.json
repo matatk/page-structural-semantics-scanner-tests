@@ -13,14 +13,29 @@
           "type": "string"
         },
         "links": {
-          "type": "array"
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "url": {
+                "type": "string",
+                "format": "uri",
+                "pattern": "^https?://"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": ["url", "text"]
+          }
         }
       },
-      "required": [ "name" ]
+      "required": ["name"]
     },
 
     "expected": {
+      "type": "array"
     }
   },
-  "required": [ "meta", "expected" ]
+  "required": ["meta", "expected"]
 }

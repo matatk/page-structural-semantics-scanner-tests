@@ -1,10 +1,14 @@
 {
   "meta": {
-    "name": "Form with aria-labelledby is recognised",
+    "name": "Form with no label, but an explicit role, is recognised",
     "links": [
       {
         "url": "https://github.com/matatk/page-structural-semantics-scanner-tests/issues/2#issuecomment-497938545",
         "text": "Overall info on forms and regions"
+      },
+      {
+        "url": "https://w3c.github.io/core-aam/#details-id-22",
+        "text": "<div role=\"form\"> gets a landmark"
       }
     ]
   },
@@ -12,8 +16,8 @@
     {
       "type": "landmark",
       "role": "form",
-      "label": "Report a Fault",
-      "selector": "body > form"
+      "label": "null",
+      "selector": "body > div"
     }
   ]
 }

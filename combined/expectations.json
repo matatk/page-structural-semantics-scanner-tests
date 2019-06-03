@@ -235,15 +235,15 @@
     },
     "expected": []
   },
-  "form-alone-is-ignored": {
-    "meta": {
-      "name": "Unlabelled form is ignored"
-    },
-    "expected": []
-  },
   "form-aria-label": {
     "meta": {
-      "name": "Form with aria-label is recognised"
+      "name": "Form with aria-label is recognised",
+      "links": [
+        {
+          "url": "https://github.com/matatk/page-structural-semantics-scanner-tests/issues/2#issuecomment-497938545",
+          "text": "Overall info on forms and regions"
+        }
+      ]
     },
     "expected": [
       {
@@ -256,7 +256,13 @@
   },
   "form-aria-labelledby": {
     "meta": {
-      "name": "Form with aria-labelledby is recognised"
+      "name": "Form with aria-labelledby is recognised",
+      "links": [
+        {
+          "url": "https://github.com/matatk/page-structural-semantics-scanner-tests/issues/2#issuecomment-497938545",
+          "text": "Overall info on forms and regions"
+        }
+      ]
     },
     "expected": [
       {
@@ -264,6 +270,41 @@
         "role": "form",
         "label": "Report a Fault",
         "selector": "body > form"
+      }
+    ]
+  },
+  "form-element-alone-is-ignored": {
+    "meta": {
+      "name": "Unlabelled <form> element is ignored",
+      "links": [
+        {
+          "url": "https://github.com/matatk/page-structural-semantics-scanner-tests/issues/2#issuecomment-497938545",
+          "text": "Overall info on forms and regions"
+        }
+      ]
+    },
+    "expected": []
+  },
+  "form-unlabelled-with-explicit-role": {
+    "meta": {
+      "name": "Form with no label, but an explicit role, is recognised",
+      "links": [
+        {
+          "url": "https://github.com/matatk/page-structural-semantics-scanner-tests/issues/2#issuecomment-497938545",
+          "text": "Overall info on forms and regions"
+        },
+        {
+          "url": "https://w3c.github.io/core-aam/#details-id-22",
+          "text": "<div role=\"form\"> gets a landmark"
+        }
+      ]
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "form",
+        "label": "null",
+        "selector": "body > div"
       }
     ]
   },
@@ -526,13 +567,25 @@
   },
   "region-alone-is-ignored": {
     "meta": {
-      "name": "Unlabelled region is ignored"
+      "name": "Unlabelled region is ignored",
+      "links": [
+        {
+          "url": "https://github.com/matatk/page-structural-semantics-scanner-tests/issues/2#issuecomment-497938545",
+          "text": "Overall info on forms and regions"
+        }
+      ]
     },
     "expected": []
   },
   "region-aria-label": {
     "meta": {
-      "name": "Region with aria-label is recognised"
+      "name": "Region with aria-label is recognised",
+      "links": [
+        {
+          "url": "https://github.com/matatk/page-structural-semantics-scanner-tests/issues/2#issuecomment-497938545",
+          "text": "Overall info on forms and regions"
+        }
+      ]
     },
     "expected": [
       {
@@ -545,7 +598,13 @@
   },
   "region-aria-labelledby": {
     "meta": {
-      "name": "Region with aria-labelledby is recognised"
+      "name": "Region with aria-labelledby is recognised",
+      "links": [
+        {
+          "url": "https://github.com/matatk/page-structural-semantics-scanner-tests/issues/2#issuecomment-497938545",
+          "text": "Overall info on forms and regions"
+        }
+      ]
     },
     "expected": [
       {
@@ -585,6 +644,12 @@
         "label": null,
         "selector": "#complementary",
         "contains": [
+          {
+            "type": "landmark",
+            "role": "form",
+            "label": null,
+            "selector": "#form"
+          },
           {
             "type": "landmark",
             "role": "search",

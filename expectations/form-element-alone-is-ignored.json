@@ -1,6 +1,6 @@
 {
   "meta": {
-    "name": "Form with aria-labelledby is recognised",
+    "name": "Unlabelled <form> element is ignored",
     "links": [
       {
         "url": "https://github.com/matatk/page-structural-semantics-scanner-tests/issues/2#issuecomment-497938545",
@@ -8,12 +8,5 @@
       }
     ]
   },
-  "expected": [
-    {
-      "type": "landmark",
-      "role": "form",
-      "label": "Report a Fault",
-      "selector": "body > form"
-    }
-  ]
+  "expected": []
 }
