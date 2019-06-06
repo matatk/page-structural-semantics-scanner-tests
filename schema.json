@@ -1,9 +1,41 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "FIXME",
+  "$id": "page-structural-semantics-scanner-tests-schema",
   "title": "Test Data",
-  "description": "FIXME",
+  "description": "Page Structural Semantics Scanner Test Expectation Schema",
   "type": "object",
+
+  "definitions": {
+    "link": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "text": {
+          "type": "string"
+        }
+      },
+      "required": ["url", "text"]
+    },
+
+    "landmarkExpectation": {
+      "type": "object",
+      "properties": {
+        "type": {"const": "landmark"},
+        "role": {"type": "string"},
+        "label": {"type": ["string", "null"]},
+        "selector": {"type": "string"},
+        "contains": {
+          "type": "array",
+          "items": {"$ref": "#/definitions/landmarkExpectation"}
+        }
+      },
+      "required": ["type", "role", "label", "selector"]
+    }
+  },
 
   "properties": {
     "meta": {
@@ -14,27 +46,15 @@
         },
         "links": {
           "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "url": {
-                "type": "string",
-                "format": "uri",
-                "pattern": "^https?://"
-              },
-              "text": {
-                "type": "string"
-              }
-            },
-            "required": ["url", "text"]
-          }
+          "items": {"$ref": "#/definitions/link"}
         }
       },
       "required": ["name"]
     },
 
     "expected": {
-      "type": "array"
+      "type": "array",
+      "items": {"$ref": "#/definitions/landmarkExpectation"}
     }
   },
   "required": ["meta", "expected"]
