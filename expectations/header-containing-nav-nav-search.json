@@ -6,25 +6,25 @@
     {
       "type": "landmark",
       "role": "banner",
-      "label": null,
+      "roleDescription": null, "label": null,
       "selector": "body > header",
       "contains": [
         {
           "type": "landmark",
           "role": "navigation",
-          "label": null,
+          "roleDescription": null, "label": null,
           "selector": "body > header > nav:nth-child(1)"
         },
         {
           "type": "landmark",
           "role": "navigation",
-          "label": null,
+          "roleDescription": null, "label": null,
           "selector": "body > header > nav:nth-child(2)",
           "contains": [
             {
               "type": "landmark",
               "role": "search",
-              "label": null,
+              "roleDescription": null, "label": null,
               "selector": "body > header > nav:nth-child(2) > div"
             }
           ]
@@ -34,13 +34,13 @@
     {
       "type": "landmark",
       "role": "main",
-      "label": null,
+      "roleDescription": null, "label": null,
       "selector": "body > main"
     },
     {
       "type": "landmark",
       "role": "contentinfo",
-      "label": null,
+      "roleDescription": null, "label": null,
       "selector": "body > footer"
     }
   ]

@@ -6,13 +6,13 @@
     {
       "type": "landmark",
       "role": "banner",
-      "label": null,
+      "roleDescription": null, "label": null,
       "selector": "body > header",
       "contains": [
         {
           "type": "landmark",
           "role": "navigation",
-          "label": "World of wombats",
+          "roleDescription": null, "label": "World of wombats",
           "selector": "body > header > nav"
         }
       ]
@@ -20,13 +20,13 @@
     {
       "type": "landmark",
       "role": "main",
-      "label": "Looking after your wombat",
+      "roleDescription": null, "label": "Looking after your wombat",
       "selector": "body > main",
       "contains": [
         {
           "type": "landmark",
           "role": "navigation",
-          "label": "Looking after your wombat Topics",
+          "roleDescription": null, "label": "Looking after your wombat Topics",
           "selector": "body > main > nav:nth-child(2)"
         }
       ]
@@ -34,7 +34,7 @@
     {
       "type": "landmark",
       "role": "contentinfo",
-      "label": null,
+      "roleDescription": null, "label": null,
       "selector": "body > footer"
     }
   ]

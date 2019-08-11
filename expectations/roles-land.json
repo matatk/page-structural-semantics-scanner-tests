@@ -6,37 +6,37 @@
     {
       "type": "landmark",
       "role": "banner",
-      "label": null,
+      "roleDescription": null, "label": null,
       "selector": "#banner"
     },
     {
       "type": "landmark",
       "role": "navigation",
-      "label": null,
+      "roleDescription": null, "label": null,
       "selector": "#navigation"
     },
     {
       "type": "landmark",
       "role": "main",
-      "label": null,
+      "roleDescription": null, "label": null,
       "selector": "#main"
     },
     {
       "type": "landmark",
       "role": "complementary",
-      "label": null,
+      "roleDescription": null, "label": null,
       "selector": "#complementary",
       "contains": [
         {
           "type": "landmark",
           "role": "form",
-          "label": null,
+          "roleDescription": null, "label": null,
           "selector": "#form",
           "contains": [
             {
               "type": "landmark",
               "role": "search",
-              "label": null,
+              "roleDescription": null, "label": null,
               "selector": "#search"
             }
           ]
@@ -46,7 +46,7 @@
     {
       "type": "landmark",
       "role": "contentinfo",
-      "label": null,
+      "roleDescription": null, "label": null,
       "selector": "#contentinfo"
     }
   ]
