@@ -6,7 +6,8 @@
     {
       "type": "landmark",
       "role": "region",
-      "roleDescription": null, "label": "All About Apples",
+      "roleDescription": null,
+      "label": "All About Apples",
       "selector": "body > section"
     }
   ]

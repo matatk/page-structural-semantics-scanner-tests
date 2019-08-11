@@ -12,7 +12,8 @@
     {
       "type": "landmark",
       "role": "form",
-      "roleDescription": null, "label": "Contact Us",
+      "roleDescription": null,
+      "label": "Contact Us",
       "selector": "body > form"
     }
   ]

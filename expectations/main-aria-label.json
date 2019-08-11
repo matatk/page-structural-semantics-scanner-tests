@@ -6,7 +6,8 @@
     {
       "type": "landmark",
       "role": "main",
-      "roleDescription": null, "label": "Slartibartfast",
+      "roleDescription": null,
+      "label": "Slartibartfast",
       "selector": "body > main"
     }
   ]

@@ -6,49 +6,57 @@
     {
       "type": "landmark",
       "role": "doc-part",
-      "roleDescription": null, "label": "Frontmatter",
+      "roleDescription": null,
+      "label": "Frontmatter",
       "selector": "body > div:nth-child(3)",
       "contains": [
         {
           "type": "landmark",
           "role": "doc-toc",
-          "roleDescription": null, "label": null,
+          "roleDescription": null,
+          "label": null,
           "selector": "body > div:nth-child(3) > nav:nth-child(1)"
         },
         {
           "type": "landmark",
           "role": "doc-pagelist",
-          "roleDescription": null, "label": null,
+          "roleDescription": null,
+          "label": null,
           "selector": "body > div:nth-child(3) > nav:nth-child(2)"
         },
         {
           "type": "landmark",
           "role": "doc-preface",
-          "roleDescription": null, "label": null,
+          "roleDescription": null,
+          "label": null,
           "selector": "body > div:nth-child(3) > div:nth-child(3)"
         },
         {
           "type": "landmark",
           "role": "doc-foreword",
-          "roleDescription": null, "label": null,
+          "roleDescription": null,
+          "label": null,
           "selector": "body > div:nth-child(3) > div:nth-child(4)"
         },
         {
           "type": "landmark",
           "role": "doc-acknowledgments",
-          "roleDescription": null, "label": null,
+          "roleDescription": null,
+          "label": null,
           "selector": "body > div:nth-child(3) > div:nth-child(5)"
         },
         {
           "type": "landmark",
           "role": "doc-prologue",
-          "roleDescription": null, "label": null,
+          "roleDescription": null,
+          "label": null,
           "selector": "body > div:nth-child(3) > div:nth-child(6)"
         },
         {
           "type": "landmark",
           "role": "doc-introduction",
-          "roleDescription": null, "label": null,
+          "roleDescription": null,
+          "label": null,
           "selector": "body > div:nth-child(3) > div:nth-child(7)"
         }
       ]
@@ -56,31 +64,36 @@
     {
       "type": "landmark",
       "role": "doc-part",
-      "roleDescription": null, "label": "Mainmatter",
+      "roleDescription": null,
+      "label": "Mainmatter",
       "selector": "body > div:nth-child(4)",
       "contains": [
         {
           "type": "landmark",
           "role": "doc-chapter",
-          "roleDescription": null, "label": "Beginnings",
+          "roleDescription": null,
+          "label": "Beginnings",
           "selector": "body > div:nth-child(4) > section:nth-child(1)"
         },
         {
           "type": "landmark",
           "role": "doc-chapter",
-          "roleDescription": null, "label": "Middles",
+          "roleDescription": null,
+          "label": "Middles",
           "selector": "body > div:nth-child(4) > section:nth-child(2)"
         },
         {
           "type": "landmark",
           "role": "doc-chapter",
-          "roleDescription": null, "label": "Endings",
+          "roleDescription": null,
+          "label": "Endings",
           "selector": "body > div:nth-child(4) > section:nth-child(3)"
         },
         {
           "type": "landmark",
           "role": "doc-conclusion",
-          "roleDescription": null, "label": null,
+          "roleDescription": null,
+          "label": null,
           "selector": "body > div:nth-child(4) > section:nth-child(4)"
         }
       ]
@@ -88,67 +101,78 @@
     {
       "type": "landmark",
       "role": "doc-part",
-      "roleDescription": null, "label": "Backmatter",
+      "roleDescription": null,
+      "label": "Backmatter",
       "selector": "body > div:nth-child(5)",
       "contains": [
         {
           "type": "landmark",
           "role": "doc-epilogue",
-          "roleDescription": null, "label": null,
+          "roleDescription": null,
+          "label": null,
           "selector": "body > div:nth-child(5) > div:nth-child(1)"
         },
         {
           "type": "landmark",
           "role": "doc-afterword",
-          "roleDescription": null, "label": null,
+          "roleDescription": null,
+          "label": null,
           "selector": "body > div:nth-child(5) > div:nth-child(2)"
         },
         {
           "type": "landmark",
           "role": "doc-endnotes",
-          "roleDescription": null, "label": null,
+          "roleDescription": null,
+          "label": null,
           "selector": "body > div:nth-child(5) > div:nth-child(3)"
         },
         {
           "type": "landmark",
           "role": "doc-bibliography",
-          "roleDescription": null, "label": "References",
+          "roleDescription": null,
+          "label": "References",
           "selector": "body > div:nth-child(5) > div:nth-child(4)"
         },
         {
           "type": "landmark",
           "role": "doc-glossary",
-          "roleDescription": null, "label": null,
+          "roleDescription": null,
+          "label": null,
           "selector": "body > div:nth-child(5) > dl:nth-child(5)"
         },
         {
           "type": "landmark",
           "role": "doc-index",
-          "roleDescription": null, "label": null,
+          "roleDescription": null,
+          "label": null,
           "selector": "body > div:nth-child(5) > nav:nth-child(6)"
         },
         {
           "type": "landmark",
           "role": "doc-credits",
-          "roleDescription": null, "label": null,
+          "roleDescription": null,
+          "label": null,
           "selector": "body > div:nth-child(5) > div:nth-child(7)"
         },
         {
           "type": "landmark",
           "role": "doc-errata",
-          "roleDescription": null, "label": null,
+          "roleDescription": null,
+          "label": null,
           "selector": "body > div:nth-child(5) > div:nth-child(8)"
         },
         {
           "type": "landmark",
           "role": "doc-appendix",
-          "roleDescription": null, "label": "Technical specification",
+          "roleDescription": null,
+          "label": "Technical specification",
           "selector": "body > div:nth-child(5) > div:nth-child(9)"
         },
         {
           "type": "landmark",
           "role": "doc-appendix",
-          "roleDescription": null, "label": "Detailed schematics",
+          "roleDescription": null,
+          "label": "Detailed schematics",
           "selector": "body > div:nth-child(5) > div:nth-child(10)"
         }
       ]

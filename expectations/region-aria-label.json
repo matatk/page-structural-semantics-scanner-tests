@@ -12,7 +12,8 @@
     {
       "type": "landmark",
       "role": "region",
-      "roleDescription": null, "label": "Reluctant Region",
+      "roleDescription": null,
+      "label": "Reluctant Region",
       "selector": "body > div"
     }
   ]

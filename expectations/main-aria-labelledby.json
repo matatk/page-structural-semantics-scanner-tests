@@ -6,7 +6,8 @@
     {
       "type": "landmark",
       "role": "main",
-      "roleDescription": null, "label": "Kate",
+      "roleDescription": null,
+      "label": "Kate",
       "selector": "body > main"
     }
   ]

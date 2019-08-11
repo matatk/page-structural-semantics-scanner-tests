@@ -6,7 +6,8 @@
     {
       "type": "landmark",
       "role": "region",
-      "roleDescription": null, "label": "Naughty invisible label",
+      "roleDescription": null,
+      "label": "Naughty invisible label",
       "selector": "body > section"
     }
   ]

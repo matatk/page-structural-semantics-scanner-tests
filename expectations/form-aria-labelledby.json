@@ -12,7 +12,8 @@
     {
       "type": "landmark",
       "role": "form",
-      "roleDescription": null, "label": "Report a Fault",
+      "roleDescription": null,
+      "label": "Report a Fault",
       "selector": "body > form"
     }
   ]
