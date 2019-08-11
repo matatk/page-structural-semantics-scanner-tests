@@ -1,6 +1,6 @@
 'use strict'
 const tap = require('tap')
-const scan = require('../lib/scan').scanAndReturnPatch
+const scan = require('../lib/scan')
 
 const invalidScanner = 42
 const invalidFixture = 42
@@ -53,7 +53,10 @@ tap.doesNotThrow(function() {
 
 tap.test('scanner is passed a window and a document', t => {
 	const result = scan(validScanner, validFixture, validExpectation)
-	t.ok(result.matches, 'window has a location and document has a body')
+	t.strictSame(
+		result,
+		validExpectation,
+		'window has a location and document has a body')
 	t.end()
 })
 
@@ -89,27 +92,34 @@ function scanner(win, doc) {
 	}
 }
 
-const expectedPatch = `--- expectation
-+++ result
-@@ -1,3 +1,3 @@
- {
--  "containsMain": true
-+  "containsMain": false
- }`
-
 tap.test('scanning a fixture without a <main>', t => {
 	const result1 = scan(scanner, fixtureA, { containsMain: false })
-	t.ok(result1.matches, 'finds there is no <main>')
+	t.strictSame(
+		result1,
+		{ containsMain: false },
+		'finds there is no <main>')
+
 	const result2 = scan(scanner, fixtureA, { containsMain: true })
-	t.notOk(result2.matches, 'does not find that there is a <main>')
-	t.equal(result2.patch, expectedPatch, 'creates a patch')
+	t.strictSame(
+		result2,
+		{ containsMain: false },
+		'still finds there is no <main>')
+
 	t.end()
 })
 
 tap.test('scanning a fixture with a <main>', t => {
 	const result1 = scan(scanner, fixtureB, { containsMain: true })
-	t.ok(result1.matches, 'finds that there is a <main>')
+	t.strictSame(
+		result1,
+		{ containsMain: true },
+		'finds that there is a <main>')
+
 	const result2 = scan(scanner, fixtureB, { containsMain: false })
-	t.notOk(result2.matches, 'does not find that there is no <main>')
+	t.strictSame(
+		result2,
+		{ containsMain: true },
+		'still finds there is a <main>')
+
 	t.end()
 })
