@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "name": "Valid aria-roledescription attribute"
+  },
+  "expected": [
+    {
+      "type": "landmark",
+      "role": "region",
+      "roleDescription": "Slide",
+      "label": "Introduction",
+      "selector": "body > section"
+    }
+  ]
+}

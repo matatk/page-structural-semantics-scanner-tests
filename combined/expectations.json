@@ -7,12 +7,14 @@
       {
         "type": "landmark",
         "role": "banner",
+        "roleDescription": null,
         "label": null,
         "selector": "body > header",
         "contains": [
           {
             "type": "landmark",
             "role": "navigation",
+            "roleDescription": null,
             "label": "World of wombats",
             "selector": "body > header > nav"
           }
@@ -21,12 +23,14 @@
       {
         "type": "landmark",
         "role": "main",
+        "roleDescription": null,
         "label": "Looking after your wombat",
         "selector": "body > main",
         "contains": [
           {
             "type": "landmark",
             "role": "navigation",
+            "roleDescription": null,
             "label": "Looking after your wombat Topics",
             "selector": "body > main > nav:nth-child(2)"
           }
@@ -35,8 +39,51 @@
       {
         "type": "landmark",
         "role": "contentinfo",
+        "roleDescription": null,
         "label": null,
         "selector": "body > footer"
+      }
+    ]
+  },
+  "aria-roledescription-invalid": {
+    "meta": {
+      "name": "Invalid aria-roledescription attributes"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "region",
+        "roleDescription": null,
+        "label": "Introduction",
+        "selector": "body > section:nth-child(1)"
+      },
+      {
+        "type": "landmark",
+        "role": "region",
+        "roleDescription": null,
+        "label": "Stuff",
+        "selector": "body > section:nth-child(2)"
+      },
+      {
+        "type": "landmark",
+        "role": "region",
+        "roleDescription": null,
+        "label": "Any questions?",
+        "selector": "body > section:nth-child(3)"
+      }
+    ]
+  },
+  "aria-roledescription-valid": {
+    "meta": {
+      "name": "Valid aria-roledescription attribute"
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "region",
+        "roleDescription": "Slide",
+        "label": "Introduction",
+        "selector": "body > section"
       }
     ]
   },
@@ -54,6 +101,7 @@
       {
         "type": "landmark",
         "role": "complementary",
+        "roleDescription": null,
         "label": null,
         "selector": "body > aside"
       }
@@ -67,6 +115,7 @@
       {
         "type": "landmark",
         "role": "complementary",
+        "roleDescription": null,
         "label": "And another thing...",
         "selector": "body > aside"
       }
@@ -80,48 +129,56 @@
       {
         "type": "landmark",
         "role": "doc-part",
+        "roleDescription": null,
         "label": "Frontmatter",
         "selector": "body > div:nth-child(3)",
         "contains": [
           {
             "type": "landmark",
             "role": "doc-toc",
+            "roleDescription": null,
             "label": null,
             "selector": "body > div:nth-child(3) > nav:nth-child(1)"
           },
           {
             "type": "landmark",
             "role": "doc-pagelist",
+            "roleDescription": null,
             "label": null,
             "selector": "body > div:nth-child(3) > nav:nth-child(2)"
           },
           {
             "type": "landmark",
             "role": "doc-preface",
+            "roleDescription": null,
             "label": null,
             "selector": "body > div:nth-child(3) > div:nth-child(3)"
           },
           {
             "type": "landmark",
             "role": "doc-foreword",
+            "roleDescription": null,
             "label": null,
             "selector": "body > div:nth-child(3) > div:nth-child(4)"
           },
           {
             "type": "landmark",
             "role": "doc-acknowledgments",
+            "roleDescription": null,
             "label": null,
             "selector": "body > div:nth-child(3) > div:nth-child(5)"
           },
           {
             "type": "landmark",
             "role": "doc-prologue",
+            "roleDescription": null,
             "label": null,
             "selector": "body > div:nth-child(3) > div:nth-child(6)"
           },
           {
             "type": "landmark",
             "role": "doc-introduction",
+            "roleDescription": null,
             "label": null,
             "selector": "body > div:nth-child(3) > div:nth-child(7)"
           }
@@ -130,30 +187,35 @@
       {
         "type": "landmark",
         "role": "doc-part",
+        "roleDescription": null,
         "label": "Mainmatter",
         "selector": "body > div:nth-child(4)",
         "contains": [
           {
             "type": "landmark",
             "role": "doc-chapter",
+            "roleDescription": null,
             "label": "Beginnings",
             "selector": "body > div:nth-child(4) > section:nth-child(1)"
           },
           {
             "type": "landmark",
             "role": "doc-chapter",
+            "roleDescription": null,
             "label": "Middles",
             "selector": "body > div:nth-child(4) > section:nth-child(2)"
           },
           {
             "type": "landmark",
             "role": "doc-chapter",
+            "roleDescription": null,
             "label": "Endings",
             "selector": "body > div:nth-child(4) > section:nth-child(3)"
           },
           {
             "type": "landmark",
             "role": "doc-conclusion",
+            "roleDescription": null,
             "label": null,
             "selector": "body > div:nth-child(4) > section:nth-child(4)"
           }
@@ -162,66 +224,77 @@
       {
         "type": "landmark",
         "role": "doc-part",
+        "roleDescription": null,
         "label": "Backmatter",
         "selector": "body > div:nth-child(5)",
         "contains": [
           {
             "type": "landmark",
             "role": "doc-epilogue",
+            "roleDescription": null,
             "label": null,
             "selector": "body > div:nth-child(5) > div:nth-child(1)"
           },
           {
             "type": "landmark",
             "role": "doc-afterword",
+            "roleDescription": null,
             "label": null,
             "selector": "body > div:nth-child(5) > div:nth-child(2)"
           },
           {
             "type": "landmark",
             "role": "doc-endnotes",
+            "roleDescription": null,
             "label": null,
             "selector": "body > div:nth-child(5) > div:nth-child(3)"
           },
           {
             "type": "landmark",
             "role": "doc-bibliography",
+            "roleDescription": null,
             "label": "References",
             "selector": "body > div:nth-child(5) > div:nth-child(4)"
           },
           {
             "type": "landmark",
             "role": "doc-glossary",
+            "roleDescription": null,
             "label": null,
             "selector": "body > div:nth-child(5) > dl:nth-child(5)"
           },
           {
             "type": "landmark",
             "role": "doc-index",
+            "roleDescription": null,
             "label": null,
             "selector": "body > div:nth-child(5) > nav:nth-child(6)"
           },
           {
             "type": "landmark",
             "role": "doc-credits",
+            "roleDescription": null,
             "label": null,
             "selector": "body > div:nth-child(5) > div:nth-child(7)"
           },
           {
             "type": "landmark",
             "role": "doc-errata",
+            "roleDescription": null,
             "label": null,
             "selector": "body > div:nth-child(5) > div:nth-child(8)"
           },
           {
             "type": "landmark",
             "role": "doc-appendix",
+            "roleDescription": null,
             "label": "Technical specification",
             "selector": "body > div:nth-child(5) > div:nth-child(9)"
           },
           {
             "type": "landmark",
             "role": "doc-appendix",
+            "roleDescription": null,
             "label": "Detailed schematics",
             "selector": "body > div:nth-child(5) > div:nth-child(10)"
           }
@@ -249,6 +322,7 @@
       {
         "type": "landmark",
         "role": "form",
+        "roleDescription": null,
         "label": "Contact Us",
         "selector": "body > form"
       }
@@ -268,6 +342,7 @@
       {
         "type": "landmark",
         "role": "form",
+        "roleDescription": null,
         "label": "Report a Fault",
         "selector": "body > form"
       }
@@ -303,6 +378,7 @@
       {
         "type": "landmark",
         "role": "form",
+        "roleDescription": null,
         "label": "null",
         "selector": "body > div"
       }
@@ -316,24 +392,28 @@
       {
         "type": "landmark",
         "role": "banner",
+        "roleDescription": null,
         "label": null,
         "selector": "body > header",
         "contains": [
           {
             "type": "landmark",
             "role": "navigation",
+            "roleDescription": null,
             "label": null,
             "selector": "body > header > nav:nth-child(1)"
           },
           {
             "type": "landmark",
             "role": "navigation",
+            "roleDescription": null,
             "label": null,
             "selector": "body > header > nav:nth-child(2)",
             "contains": [
               {
                 "type": "landmark",
                 "role": "search",
+                "roleDescription": null,
                 "label": null,
                 "selector": "body > header > nav:nth-child(2) > div"
               }
@@ -344,12 +424,14 @@
       {
         "type": "landmark",
         "role": "main",
+        "roleDescription": null,
         "label": null,
         "selector": "body > main"
       },
       {
         "type": "landmark",
         "role": "contentinfo",
+        "roleDescription": null,
         "label": null,
         "selector": "body > footer"
       }
@@ -369,6 +451,7 @@
       {
         "type": "landmark",
         "role": "main",
+        "roleDescription": null,
         "label": null,
         "selector": "body > main"
       }
@@ -382,6 +465,7 @@
       {
         "type": "landmark",
         "role": "main",
+        "roleDescription": null,
         "label": null,
         "selector": "body > main"
       }
@@ -395,6 +479,7 @@
       {
         "type": "landmark",
         "role": "main",
+        "roleDescription": null,
         "label": null,
         "selector": "body > main"
       }
@@ -408,6 +493,7 @@
       {
         "type": "landmark",
         "role": "main",
+        "roleDescription": null,
         "label": null,
         "selector": "body > main"
       }
@@ -421,6 +507,7 @@
       {
         "type": "landmark",
         "role": "main",
+        "roleDescription": null,
         "label": null,
         "selector": "body > main"
       }
@@ -434,6 +521,7 @@
       {
         "type": "landmark",
         "role": "main",
+        "roleDescription": null,
         "label": null,
         "selector": "body > main"
       }
@@ -447,6 +535,7 @@
       {
         "type": "landmark",
         "role": "main",
+        "roleDescription": null,
         "label": null,
         "selector": "body > main"
       }
@@ -460,6 +549,7 @@
       {
         "type": "landmark",
         "role": "main",
+        "roleDescription": null,
         "label": "Slartibartfast",
         "selector": "body > main"
       }
@@ -473,6 +563,7 @@
       {
         "type": "landmark",
         "role": "main",
+        "roleDescription": null,
         "label": "Kate",
         "selector": "body > main"
       }
@@ -486,18 +577,21 @@
       {
         "type": "landmark",
         "role": "main",
+        "roleDescription": null,
         "label": null,
         "selector": "body > main",
         "contains": [
           {
             "type": "landmark",
             "role": "region",
+            "roleDescription": null,
             "label": "Sibling One",
             "selector": "body > main > div:nth-child(1) > div"
           },
           {
             "type": "landmark",
             "role": "region",
+            "roleDescription": null,
             "label": "Sibling Two",
             "selector": "body > main > div:nth-child(2) > div"
           }
@@ -513,24 +607,28 @@
       {
         "type": "landmark",
         "role": "banner",
+        "roleDescription": null,
         "label": null,
         "selector": "body > header"
       },
       {
         "type": "landmark",
         "role": "main",
+        "roleDescription": null,
         "label": null,
         "selector": "body > main",
         "contains": [
           {
             "type": "landmark",
             "role": "region",
+            "roleDescription": null,
             "label": "Outer section header",
             "selector": "body > main > section",
             "contains": [
               {
                 "type": "landmark",
                 "role": "region",
+                "roleDescription": null,
                 "label": "Inner section header",
                 "selector": "body > main > section > section"
               }
@@ -541,6 +639,7 @@
       {
         "type": "landmark",
         "role": "contentinfo",
+        "roleDescription": null,
         "label": null,
         "selector": "body > footer"
       }
@@ -560,6 +659,7 @@
       {
         "type": "landmark",
         "role": "main",
+        "roleDescription": null,
         "label": "Kate",
         "selector": "body > main"
       }
@@ -591,6 +691,7 @@
       {
         "type": "landmark",
         "role": "region",
+        "roleDescription": null,
         "label": "Reluctant Region",
         "selector": "body > div"
       }
@@ -610,6 +711,7 @@
       {
         "type": "landmark",
         "role": "region",
+        "roleDescription": null,
         "label": "A Good Region",
         "selector": "body > div"
       }
@@ -623,36 +725,42 @@
       {
         "type": "landmark",
         "role": "banner",
+        "roleDescription": null,
         "label": null,
         "selector": "#banner"
       },
       {
         "type": "landmark",
         "role": "navigation",
+        "roleDescription": null,
         "label": null,
         "selector": "#navigation"
       },
       {
         "type": "landmark",
         "role": "main",
+        "roleDescription": null,
         "label": null,
         "selector": "#main"
       },
       {
         "type": "landmark",
         "role": "complementary",
+        "roleDescription": null,
         "label": null,
         "selector": "#complementary",
         "contains": [
           {
             "type": "landmark",
             "role": "form",
+            "roleDescription": null,
             "label": null,
             "selector": "#form"
           },
           {
             "type": "landmark",
             "role": "search",
+            "roleDescription": null,
             "label": null,
             "selector": "#search"
           }
@@ -661,6 +769,7 @@
       {
         "type": "landmark",
         "role": "contentinfo",
+        "roleDescription": null,
         "label": null,
         "selector": "#contentinfo"
       }
@@ -680,6 +789,7 @@
       {
         "type": "landmark",
         "role": "region",
+        "roleDescription": null,
         "label": "Naughty invisible label",
         "selector": "body > section"
       }
@@ -693,6 +803,7 @@
       {
         "type": "landmark",
         "role": "region",
+        "roleDescription": null,
         "label": "All About Apples",
         "selector": "body > section"
       }
@@ -706,30 +817,35 @@
       {
         "type": "landmark",
         "role": "banner",
+        "roleDescription": null,
         "label": null,
         "selector": "body > header"
       },
       {
         "type": "landmark",
         "role": "complementary",
+        "roleDescription": null,
         "label": null,
         "selector": "body > aside"
       },
       {
         "type": "landmark",
         "role": "navigation",
+        "roleDescription": null,
         "label": null,
         "selector": "body > nav"
       },
       {
         "type": "landmark",
         "role": "main",
+        "roleDescription": null,
         "label": null,
         "selector": "body > main"
       },
       {
         "type": "landmark",
         "role": "contentinfo",
+        "roleDescription": null,
         "label": null,
         "selector": "body > footer"
       }

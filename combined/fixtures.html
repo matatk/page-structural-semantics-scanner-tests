@@ -26,6 +26,22 @@
 			Footer
 		</footer>
 	</div>
+<div data-test-id="aria-roledescription-invalid">
+		<section aria-roledescription="" aria-labelledby="slide-1-title">
+			<h1 id="slide-1-title">Introduction</h1>
+		</section>
+		<section aria-roledescription="	" aria-labelledby="slide-i-title">
+			<h1 id="slide-i-title">Stuff</h1>
+		</section>
+		<section aria-roledescription="	 " aria-labelledby="slide-n-title">
+			<h1 id="slide-n-title">Any questions?</h1>
+		</section>
+	</div>
+<div data-test-id="aria-roledescription-valid">
+		<section aria-roledescription="Slide" aria-labelledby="slide-1-title">
+			<h1 id="slide-1-title">Introduction</h1>
+		</section>
+	</div>
 <div data-test-id="article-is-ignored">
 		<article>
 			<p>Articles should be ignored.</p>
