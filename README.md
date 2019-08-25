@@ -151,7 +151,7 @@ If an `aria-labelledby` attribute references multiple elements, all of those ele
 
 It is possible to use the [`aria-roledescription`](https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription) attribute to provide a custom label to be used for the *type* of landmark. This allows you to, for example, provide more application-specific and thus user-friendly names for the roles.
 
-This can be very helpful in some casese, but don't be tempted to over-use this technique; swapping conventional role names for custom ones can decrease usability.
+This can be very helpful in some cases, but don't be tempted to over-use this technique; swapping conventional role names for custom ones can decrease usability. The examples and guidelines given in the ARIA specification, linked above, are most helpful.
 
 You do not need to use this attribute in an attempt to localise your site if you're using standard landmark roles: user agents (browsers, browser extensions and assistive technologies) should already support this.
 
