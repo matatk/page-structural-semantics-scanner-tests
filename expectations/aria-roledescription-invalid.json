@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "name": "Invalid aria-roledescription attributes"
+  },
+  "expected": [
+    {
+      "type": "landmark",
+      "role": "region",
+      "roleDescription": null,
+      "label": "Introduction",
+      "selector": "body > section:nth-child(1)"
+    },
+    {
+      "type": "landmark",
+      "role": "region",
+      "roleDescription": null,
+      "label": "Stuff",
+      "selector": "body > section:nth-child(2)"
+    },
+    {
+      "type": "landmark",
+      "role": "region",
+      "roleDescription": null,
+      "label": "Any questions?",
+      "selector": "body > section:nth-child(3)"
+    }
+  ]
+}

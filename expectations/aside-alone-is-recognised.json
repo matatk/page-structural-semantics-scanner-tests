@@ -6,6 +6,7 @@
     {
       "type": "landmark",
       "role": "complementary",
+      "roleDescription": null,
       "label": null,
       "selector": "body > aside"
     }

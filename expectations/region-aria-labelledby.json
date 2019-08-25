@@ -12,6 +12,7 @@
     {
       "type": "landmark",
       "role": "region",
+      "roleDescription": null,
       "label": "A Good Region",
       "selector": "body > div"
     }

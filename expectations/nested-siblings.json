@@ -6,18 +6,21 @@
     {
       "type": "landmark",
       "role": "main",
+      "roleDescription": null,
       "label": null,
       "selector": "body > main",
       "contains": [
         {
           "type": "landmark",
           "role": "region",
+          "roleDescription": null,
           "label": "Sibling One",
           "selector": "body > main > div:nth-child(1) > div"
         },
         {
           "type": "landmark",
           "role": "region",
+          "roleDescription": null,
           "label": "Sibling Two",
           "selector": "body > main > div:nth-child(2) > div"
         }

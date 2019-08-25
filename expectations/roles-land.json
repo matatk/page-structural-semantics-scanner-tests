@@ -6,36 +6,42 @@
     {
       "type": "landmark",
       "role": "banner",
+      "roleDescription": null,
       "label": null,
       "selector": "#banner"
     },
     {
       "type": "landmark",
       "role": "navigation",
+      "roleDescription": null,
       "label": null,
       "selector": "#navigation"
     },
     {
       "type": "landmark",
       "role": "main",
+      "roleDescription": null,
       "label": null,
       "selector": "#main"
     },
     {
       "type": "landmark",
       "role": "complementary",
+      "roleDescription": null,
       "label": null,
       "selector": "#complementary",
       "contains": [
         {
           "type": "landmark",
           "role": "form",
+          "roleDescription": null,
           "label": null,
           "selector": "#form",
           "contains": [
             {
               "type": "landmark",
               "role": "search",
+              "roleDescription": null,
               "label": null,
               "selector": "#search"
             }
@@ -46,6 +52,7 @@
     {
       "type": "landmark",
       "role": "contentinfo",
+      "roleDescription": null,
       "label": null,
       "selector": "#contentinfo"
     }

@@ -26,6 +26,7 @@
       "properties": {
         "type": {"const": "landmark"},
         "role": {"type": "string"},
+        "roleDescription": {"type": ["string", "null"]},
         "label": {"type": ["string", "null"]},
         "selector": {"type": "string"},
         "contains": {
@@ -33,7 +34,7 @@
           "items": {"$ref": "#/definitions/landmarkExpectation"}
         }
       },
-      "required": ["type", "role", "label", "selector"]
+      "required": ["type", "role", "roleDescription", "label", "selector"]
     }
   },
 

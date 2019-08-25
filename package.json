@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "jsdom": "~14.0",
-    "tap": "~12.6"
+    "tap": "~14.6"
   },
   "devDependencies": {
     "ajv-cli": "~3.0",
