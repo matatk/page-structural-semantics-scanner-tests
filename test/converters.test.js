@@ -14,6 +14,7 @@ const testSuiteFormatExample = {
 				{
 					'type': 'landmark',
 					'role': 'navigation',
+					'roleDescription': null,
 					'label': 'World of wombats',
 					'selector': 'body > header > nav'
 				}
@@ -29,6 +30,7 @@ const testSuiteFormatExample = {
 				{
 					'type': 'landmark',
 					'role': 'navigation',
+					'roleDescription': null,
 					'label': 'Looking after your wombat Topics',
 					'selector': 'body > main > nav:nth-child(2)'
 				}
