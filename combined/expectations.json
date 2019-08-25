@@ -379,7 +379,7 @@
         "type": "landmark",
         "role": "form",
         "roleDescription": null,
-        "label": "null",
+        "label": null,
         "selector": "body > div"
       }
     ]
@@ -755,14 +755,16 @@
             "role": "form",
             "roleDescription": null,
             "label": null,
-            "selector": "#form"
-          },
-          {
-            "type": "landmark",
-            "role": "search",
-            "roleDescription": null,
-            "label": null,
-            "selector": "#search"
+            "selector": "#form",
+            "contains": [
+              {
+                "type": "landmark",
+                "role": "search",
+                "roleDescription": null,
+                "label": null,
+                "selector": "#search"
+              }
+            ]
           }
         ]
       },
