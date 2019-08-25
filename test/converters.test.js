@@ -7,6 +7,7 @@ const testSuiteFormatExample = {
 		{
 			'type': 'landmark',
 			'role': 'banner',
+			'roleDescription': null,
 			'label': null,
 			'selector': 'body > header',
 			'contains': [
@@ -21,6 +22,7 @@ const testSuiteFormatExample = {
 		{
 			'type': 'landmark',
 			'role': 'main',
+			'roleDescription': null,
 			'label': 'Looking after your wombat',
 			'selector': 'body > main',
 			'contains': [
@@ -35,6 +37,7 @@ const testSuiteFormatExample = {
 		{
 			'type': 'landmark',
 			'role': 'contentinfo',
+			'roleDescription': null,
 			'label': null,
 			'selector': 'body > footer'
 		}
@@ -46,30 +49,35 @@ const landmarksFormatExample = {
 		{
 			'depth': 0,
 			'role': 'banner',
+			'roleDescription': null,
 			'label': null,
 			'selector': 'body > header'
 		},
 		{
 			'depth': 1,
 			'role': 'navigation',
+			'roleDescription': null,
 			'label': 'World of wombats',
 			'selector': 'body > header > nav'
 		},
 		{
 			'depth': 0,
 			'role': 'main',
+			'roleDescription': null,
 			'label': 'Looking after your wombat',
 			'selector': 'body > main'
 		},
 		{
 			'depth': 1,
 			'role': 'navigation',
+			'roleDescription': null,
 			'label': 'Looking after your wombat Topics',
 			'selector': 'body > main > nav:nth-child(2)'
 		},
 		{
 			'depth': 0,
 			'role': 'contentinfo',
+			'roleDescription': null,
 			'label': null,
 			'selector': 'body > footer'
 		}
@@ -159,4 +167,4 @@ const a11yOutlineFormatExample = {
 tap.strictSame(
 	converters.a11yOutline(testSuiteFormatExample.expected),
 	a11yOutlineFormatExample.expected,
-	'test data converted to a11y-outline format')
+	'test data converted to a11y-outline format [which does not support aria-roledescription]')
