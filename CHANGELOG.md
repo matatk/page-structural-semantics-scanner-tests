@@ -1,5 +1,28 @@
 # Page Structural Semantics Scanner Tests changelog
 
+## [0.3.0](https://github.com/matatk/page-structural-semantics-scanner-tests/compare/0.2.1...0.3.0) (2019-08-25)
+
+### Bug fixes
+
+* Expectation errors: nesting in roles-land and "null" as label ([#14](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/14)) ([e325ca3](https://github.com/matatk/page-structural-semantics-scanner-tests/commit/e325ca3))
+
+### Chores
+
+* Bump dependencies ([#16](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/16)) ([0b3f4b4](https://github.com/matatk/page-structural-semantics-scanner-tests/commit/0b3f4b4))
+
+### Documentation
+
+* **README:** Update with spec compliance and other fixes. ([#17](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/17)) ([7d8baaa](https://github.com/matatk/page-structural-semantics-scanner-tests/commit/7d8baaa)), closes [#6](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/6) [#7](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/7) [#10](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/10) [#15](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/15)
+
+### Features
+
+* Add aria-roledescription tests ([#13](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/13)) ([048d388](https://github.com/matatk/page-structural-semantics-scanner-tests/commit/048d388)), closes [#11](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/11)
+* Simplify existing implementation; Start tested foundations… ([#12](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/12)) ([4e53f88](https://github.com/matatk/page-structural-semantics-scanner-tests/commit/4e53f88))
+
+### Tests
+
+* Schema validation of landmark expectations ([f5adf44](https://github.com/matatk/page-structural-semantics-scanner-tests/commit/f5adf44)), closes [#9](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/9)
+
 ## [0.2.1](https://github.com/matatk/page-structural-semantics-scanner-tests/compare/0.2.0...0.2.1) (2019-06-03)
 
 ### Bug fixes
