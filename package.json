@@ -25,13 +25,13 @@
     }
   },
   "dependencies": {
-    "jsdom": "~14.0",
+    "jsdom": "~15.1",
     "tap": "~14.6"
   },
   "devDependencies": {
     "ajv-cli": "~3.0",
     "conventional-changelog-moulded-angular": "github:matatk/conventional-changelog-moulded-angular#0.2.0",
-    "eslint": "~5.16",
-    "husky": "~1.3"
+    "eslint": "~6.2",
+    "husky": "~3.0"
   }
 }
