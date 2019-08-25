@@ -31,13 +31,15 @@
           "type": "landmark",
           "role": "form",
           "label": null,
-          "selector": "#form"
-        },
-        {
-          "type": "landmark",
-          "role": "search",
-          "label": null,
-          "selector": "#search"
+          "selector": "#form",
+          "contains": [
+            {
+              "type": "landmark",
+              "role": "search",
+              "label": null,
+              "selector": "#search"
+            }
+          ]
         }
       ]
     },

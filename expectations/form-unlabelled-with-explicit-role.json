@@ -16,7 +16,7 @@
     {
       "type": "landmark",
       "role": "form",
-      "label": "null",
+      "label": null,
       "selector": "body > div"
     }
   ]
