@@ -94,31 +94,43 @@ All of the core [WAI-ARIA landmark roles](https://www.w3.org/TR/wai-aria-1.1/#la
 -   banner<sup>1</sup>
 -   complementary
 -   contentinfo<sup>1</sup>
--   form<sup>2</sup>
+-   form<sup>2, 3, 4</sup>
 -   main
 -   navigation
--   region<sup>2</sup>
+-   region<sup>2, 3, 5</sup>
 -   search
 
 ### Caveats
 
-1.  Both `<header>` (`banner`) and `<footer>` (`contentinfo`) elements are not considered landmarks unless they are the page-wide header/footer elements. (As per the [HTML element role mappings](https://www.w3.org/TR/html-aam-1.0/#html-element-role-mappings).)
+1.  Both [`<header>` (`banner`)](https://www.w3.org/TR/html-aam-1.0/#details-id-45) and [`<footer>` (`contentinfo`)](https://www.w3.org/TR/html-aam-1.0/#details-id-39) elements are not considered landmarks unless they are the page-wide header/footer elements, as per the HTML Accessibility API Mappings.
 
-2.  [`form`](https://www.w3.org/TR/wai-aria-1.1/#form) and [`region`](https://www.w3.org/TR/wai-aria-1.1/#region) landmarks are intended to be labelled. Ideally, this should be done with a visual label and an `aria-labelledby` attribute, so that all users can perceive the label. However, if a label is only provided by the non-visual `aria-label` attribute, this extension will recognise it.
+2.  Elements with a [`form` role](https://www.w3.org/TR/wai-aria-1.1/#form) or a [`region` role](https://www.w3.org/TR/wai-aria-1.1/#region) are intended to be labelled. Ideally, this should be done with a visual label and an `aria-labelledby` attribute, so that all users can perceive the label. However, if a label is only provided by the non-visual `aria-label` attribute, it should be recognised by assistive technologies.
 
-    The HTML Accessibility API Mapping is clear that both [unlabelled `<form>`](https://www.w3.org/TR/html-aam-1.0/#details-id-42) and [unlabelled `<section>` (`region`)](https://www.w3.org/TR/html-aam-1.0/#details-id-119) elements are *not* to be counted as landmark regions. This extension discounts *any* unlabelled element with a role of `form` or `region` too, which is in line with most assistive technologies, and is intended to reduce noise in landmark navigation.
+3. The HTML Accessibility API Mappings document is clear that both [unlabelled `<form>`](https://www.w3.org/TR/html-aam-1.0/#details-id-42) and [unlabelled `<section>` (`region`)](https://www.w3.org/TR/html-aam-1.0/#details-id-118) elements are *not* to be counted as landmark regions.
+
+4. A `form` role that is explicitly specified via [`<div role="form">`](https://www.w3.org/TR/core-aam-1.1/#role-map-form) (lacking a label of any kind) *is* counted as a valid landmark. This is because the request for a label with the [`form` role](https://www.w3.org/TR/wai-aria-1.1/#form) is a "should" (optional).
+
+5. A `region` role explicitly specified via [`<div role="region">`](https://www.w3.org/TR/core-aam-1.1/#role-map-region-nameless) (lacking a label of any kind) *is not* counted as a landmark. This is because the request for a label with the [`region` role](https://www.w3.org/TR/wai-aria-1.1/#region) is a "must" (required).
 
 ### Labelling landmarks
 
-If a landmark label is present (via the `aria-labelledby` or `aria-label` attributes), it'll be shown in the pop-up. As per the [accessible name calculation algorithm](https://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te) used by browsers, the `aria-labelledby` attribute takes precedence over `aria-label`.
+As per the [accessible name calculation algorithm](https://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te) used by browsers, the `aria-labelledby` attribute takes precedence over `aria-label`.
 
 If an `aria-labelledby` attribute references multiple elements, all of those elements' text content will be joined to form the label for the landmark. However, it's not recommended that you label landmark regions with more than one element (usually referring to a single HTML heading element is sufficient). Using more than one labelling element could be a sign that your landmark structure is too complicated. [Referencing multiple labelling elements is more suited for labelling `<input>` elements with information from multiple sources.](https://www.w3.org/WAI/GL/wiki/Using_aria-labelledby_to_concatenate_a_label_from_several_text_nodes#Example_1:_A_time-out_input_field_with_concatenated_label)
+
+### Landmark role descriptions
+
+It is possible to use the [`aria-roledescription`](https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription) attribute to provide a custom label to be used for the *type* of landmark. This allows you to, for example, provide more application-specific and thus user-friendly names for the roles.
+
+This can be very helpful in some cases, but don't be tempted to over-use this technique; swapping conventional role names for custom ones can decrease usability. The examples and guidelines given in the ARIA specification, linked above, are most helpful.
+
+You do not need to use this attribute in an attempt to localise your site if you're using standard landmark roles: user agents (browsers, browser extensions and assistive technologies) should already support this.
 
 ### Digital publishing ARIA landmarks
 
 The following additional landmark roles defined in the [Digital Publishing WAI-ARIA Module 1.0](https://www.w3.org/TR/dpub-aria-1.0/) are also supported.
 
--   `doc-acknowledgements`
+-   `doc-acknowledgments`
 -   `doc-afterword`
 -   `doc-appendix`
 -   `doc-bibliography`
