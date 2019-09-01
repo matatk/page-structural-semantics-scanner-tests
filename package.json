@@ -7,12 +7,10 @@
   "author": "Matthew Tylee Atkinson",
   "main": "index.js",
   "scripts": {
-    "_build": "node script/includes.js && node script/combineFixturesExpectations.js",
-    "post_build": "echo 'Remember to check the example scripts before publishing.'",
+    "_build": "node script/combineFixturesExpectations.js",
     "prebuild": "npm test",
     "build": "npm run --silent _build",
     "build:quick": "npm run --silent _build",
-    "examples": "script/run-all-examples.sh",
     "pretest": "npm run validate && eslint .",
     "test": "tap --no-esm --coverage test",
     "test:quick": "tap --no-esm test || true",
@@ -21,7 +19,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run build && git add README.md"
+      "pre-commit": "npm run build"
     }
   },
   "devDependencies": {
