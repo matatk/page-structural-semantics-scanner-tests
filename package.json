@@ -24,14 +24,11 @@
       "pre-commit": "npm run build && git add README.md"
     }
   },
-  "dependencies": {
-    "jsdom": "~15.1",
-    "tap": "~14.6"
-  },
   "devDependencies": {
     "ajv-cli": "~3.0",
     "conventional-changelog-moulded-angular": "github:matatk/conventional-changelog-moulded-angular#0.2.0",
-    "eslint": "~6.2",
-    "husky": "~3.0"
+    "eslint": "~6.3",
+    "husky": "~3.0",
+    "tap": "~14.6"
   }
 }

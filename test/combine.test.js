@@ -9,6 +9,7 @@ const validExpectationsDir = path.join(baseDir, 'expectations')
 
 const expectedHtml = '<div data-test-id="simple-1"><p>Simple HTML fixture 1</p></div>\n<div data-test-id="simple-2"><p>Simple HTML fixture 2</p></div>'
 
+// TODO strictSame?
 tap.equal(
 	combine(validFixturesDir, validExpectationsDir).html,
 	expectedHtml,
