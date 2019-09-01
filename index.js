@@ -1,4 +1,11 @@
 'use strict'
+const path = require('path')
+
+const fixturesDir = path.join(__dirname, 'fixtures')
+const expectationsDir = path.join(__dirname, 'expectations')
+
 module.exports = {
-	'nowt': null
+	'getFullPageTests': function() {
+		return require('./lib/getFullPageTests')(fixturesDir, expectationsDir)
+	}
 }
