@@ -28,12 +28,11 @@ The fixtures and expectations are provided in two formats:
  * Individual fixtures and expectations can be found in the "fixtures/" and "expectations/" directories. These files are useful when running the tests from Node.
  * A combined fixture file, containing all but two of the tests, can be found alongside a combined expectation file, in the "combined/" directory. These may be useful if your test runner runs inside a browser. The HTML file contains only the fixtures, in a series of `<div>` elements; it is not a fully-formed HTML document.
 
-  The reason why the combined files don't contain all of the test fixtures is that two ("application-alone-on-body-is-ignored" and "landmark-role-on-body") require an ARIA `role` attribute to be set on the `<body>` element.
+   The reason why the combined files don't contain all of the test fixtures is that two ("application-alone-on-body-is-ignored" and "landmark-role-on-body") require an ARIA `role` attribute to be set on the `<body>` element.
 
 ### Convenience code to iterate over the tests
 
 <!-- embedme script/example.js -->
-
 ```js
 'use strict'
 const pssst = require('page-structural-semantics-scanner-tests')
@@ -41,7 +40,7 @@ console.log(JSON.stringify(pssst.getFullPageTests(), null, 2))
 // console.log(JSON.stringify(pssst.getFullPageTestsInline(), null, 2))
 ```
 
-Gives you something like
+...will give you a result of the form...
 
 ```
 {
@@ -71,12 +70,12 @@ Gives you something like
    - the fixture (either the path to the HTML file, or the contents of that file inline)
    - the expectation (JSON)
 
-Two functions are provided by this module, allowing you to control whether you want the file paths for the HTML, or to have their contents inline:
+Two functions are provided, allowing you to control whether you want the file paths for the HTML, or to have their contents inline:
 
  * `getFullPageTests()`
  * `getFullPageTestsInline()`
 
-**Note:** there are no convenience functions for the combined tests mentioned above—it makes most sense just to load them directly.
+**Note:** there are no convenience functions for iterating over the combined tests mentioned above—it makes most sense just to load them directly.
 
 Support for landmarks
 ---------------------
