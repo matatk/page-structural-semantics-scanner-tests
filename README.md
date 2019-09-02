@@ -32,8 +32,14 @@ The fixtures and expectations are provided in two formats:
 
 ### Convenience code to iterate over the tests
 
-```javascript
-// script/example.js
+<!-- embedme script/example.js -->
+
+```js
+'use strict'
+const pssst = require('page-structural-semantics-scanner-tests')
+console.log(JSON.stringify(pssst.getFullPageTests(), null, 2))
+// console.log(JSON.stringify(pssst.getFullPageTestsInline(), null, 2))
+
 ```
 
 Gives you something like
