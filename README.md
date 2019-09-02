@@ -44,7 +44,7 @@ console.log(JSON.stringify(pssst.getFullPageTests(), null, 2))
 
 Gives you something like
 
-```json
+```
 {
   . . .
   "main-alone-is-recognised": {
