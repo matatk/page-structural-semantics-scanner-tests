@@ -7,7 +7,7 @@
   "author": "Matthew Tylee Atkinson",
   "main": "index.js",
   "scripts": {
-    "_build": "node script/combineFixturesExpectations.js && git add .",
+    "_build": "node script/combineFixturesExpectations.js && git add combined",
     "prebuild": "npm test",
     "build": "npm run --silent _build",
     "build:quick": "npm run --silent _build",
