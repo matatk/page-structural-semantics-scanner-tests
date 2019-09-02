@@ -1,14 +1,17 @@
 'use strict'
 const path = require('path')
 
+const getFullPageTests = require('./lib/getFullPageTests')
+const getFullPageTestsInline = require('./lib/getFullPageTestsInline')
+
 const fixturesDir = path.join(__dirname, 'fixtures')
 const expectationsDir = path.join(__dirname, 'expectations')
 
 module.exports = {
 	'getFullPageTests': function() {
-		return require('./lib/getFullPageTests')(fixturesDir, expectationsDir)
+		return getFullPageTests(fixturesDir, expectationsDir)
 	},
 	'getFullPageTestsInline': function() {
-		return require('./lib/getFullPageTestsInline')(fixturesDir, expectationsDir)
+		return getFullPageTestsInline(fixturesDir, expectationsDir)
 	}
 }
