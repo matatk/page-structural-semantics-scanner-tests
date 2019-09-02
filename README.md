@@ -39,7 +39,6 @@ The fixtures and expectations are provided in two formats:
 const pssst = require('page-structural-semantics-scanner-tests')
 console.log(JSON.stringify(pssst.getFullPageTests(), null, 2))
 // console.log(JSON.stringify(pssst.getFullPageTestsInline(), null, 2))
-
 ```
 
 Gives you something like
@@ -76,6 +75,8 @@ Two functions are provided by this module, allowing you to control whether you w
 
  * `getFullPageTests()`
  * `getFullPageTestsInline()`
+
+**Note:** there are no convenience functions for the combined tests mentioned above—it makes most sense just to load them directly.
 
 Support for landmarks
 ---------------------
