@@ -16,21 +16,20 @@ The following topics are covered below:
 Test suite info
 ---------------
 
-The following main components are provided.
+The test suite provides a set of:
 
- * **Fixtures** are HTML files. [Example fixture](https://github.com/matatk/page-structural-semantics-scanner-tests/blob/master/fixtures/aria-labelledby-multiple-idrefs.html)
- * **Expectations** are JSON objects that contain the correct set of landmarks for a given fixture. [Example expectation](https://github.com/matatk/page-structural-semantics-scanner-tests/blob/master/expectations/aria-labelledby-multiple-idrefs.json)
-
-### Loading the fixture and expectation files
+ * **Fixtures:** the HTML code for each test. [Example fixture](https://github.com/matatk/page-structural-semantics-scanner-tests/blob/master/fixtures/aria-labelledby-multiple-idrefs.html)
+ * **Expectations:** JSON objects that contain the correct set of landmarks for a given fixture. [Example expectation](https://github.com/matatk/page-structural-semantics-scanner-tests/blob/master/expectations/aria-labelledby-multiple-idrefs.json)
 
 The fixtures and expectations are provided in two formats:
 
- * Individual fixtures and expectations can be found in the "fixtures/" and "expectations/" directories. These files are useful when running the tests from Node.
- * A combined fixture file, containing all but two of the tests, can be found alongside a combined expectation file, in the "combined/" directory. These may be useful if your test runner runs inside a browser. The HTML file contains only the fixtures, in a series of `<div>` elements; it is not a fully-formed HTML document.
+ * A set of full-HTML-page fixtures and separate matching expectation files can be found in the "fixtures/" and "expectations/" directories. It's recommended that you use these, as they cover all of the tests.
 
-   The reason why the combined files don't contain all of the test fixtures is that two ("application-alone-on-body-is-ignored" and "landmark-role-on-body") require an ARIA `role` attribute to be set on the `<body>` element.
+ * A single fixture file, containing all but two of the tests, can be found alongside a matching single expectation file, in the "combined/" directory. The HTML file contains only the fixtures, in a series of `<div>` elements; it is not a fully-formed HTML document.
 
-### Convenience code to iterate over the tests
+   These may be useful if your test runner runs inside a browser **but they have a limitation:** two of the tests ("application-alone-on-body-is-ignored" and "landmark-role-on-body") require an ARIA `role` attribute to be set on the `<body>` element, so cannot be included.
+
+### Convenience code to iterate over the full-page tests
 
 <!-- embedme script/example.js -->
 ```js
@@ -49,7 +48,7 @@ console.log(JSON.stringify(pssst.getFullPageTests(), null, 2))
     "meta": {
       "name": "Main element is recognised"
     },
-    "fixture": "/Users/matatk/projects/page-structural-semantics-scanner-tests/fixtures/main-alone-is-recognised.html",
+    "fixture": ".../page-structural-semantics-scanner-tests/fixtures/main-alone-is-recognised.html",
     "expected": [
       {
         "type": "landmark",
@@ -64,18 +63,12 @@ console.log(JSON.stringify(pssst.getFullPageTests(), null, 2))
 }
 ```
 
- * Top-level keys are test IDs.
- * Each test object contains:
-   - metadata
-   - the fixture (either the path to the HTML file, or the contents of that file inline)
-   - the expectation (JSON)
-
 Two functions are provided, allowing you to control whether you want the file paths for the HTML, or to have their contents inline:
 
  * `getFullPageTests()`
  * `getFullPageTestsInline()`
 
-**Note:** there are no convenience functions for iterating over the combined tests mentioned above—it makes most sense just to load them directly.
+There are no convenience functions for iterating over the combined tests mentioned above—it makes most sense to just load them directly.
 
 Support for landmarks
 ---------------------
