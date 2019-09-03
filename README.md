@@ -19,7 +19,7 @@ Test suite info
 The test suite provides a set of:
 
  * **Fixtures:** HTML scenes (one for each test). [Example fixture](https://github.com/matatk/page-structural-semantics-scanner-tests/blob/master/fixtures/aria-labelledby-multiple-idrefs.html)
- * **Expectations:** JSON objects that contain the correct set of landmarks (one for each fixture). [Example expectation](https://github.com/matatk/page-structural-semantics-scanner-tests/blob/master/expectations/aria-labelledby-multiple-idrefs.json)
+ * **Expectations:** JSON objects that describe the correct set of landmarks (one for each fixture). [Example expectation](https://github.com/matatk/page-structural-semantics-scanner-tests/blob/master/expectations/aria-labelledby-multiple-idrefs.json)
 
 The fixtures and expectations are provided in two formats:
 
