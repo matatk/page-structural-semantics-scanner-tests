@@ -1,5 +1,15 @@
 # Page Structural Semantics Scanner Tests changelog
 
+## [0.4.0](https://github.com/matatk/page-structural-semantics-scanner-tests/compare/0.3.0...0.4.0) (2019-10-11)
+
+### Features
+
+* Separation of concerns ([#19](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/19)) ([af47029](https://github.com/matatk/page-structural-semantics-scanner-tests/commit/af47029)), closes [#18](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/18)
+
+### BREAKING CHANGES
+
+* Simplify this repo so that it only contains tests - not test runners or converters - and doesn't introduce onerous dependencies.
+
 ## [0.3.0](https://github.com/matatk/page-structural-semantics-scanner-tests/compare/0.2.1...0.3.0) (2019-08-25)
 
 ### Bug fixes
