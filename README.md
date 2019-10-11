@@ -5,8 +5,6 @@ Page Structural Semantics Scanner Tests
 
 This is a test suite for tools that scan for semantic structural information on web pages, such as landmarks \[with headings and articles in the works\]. Such information is often used to afford or improve the accessibility of pages, allowing people using screen-readers and alternative browsers to navigate and understand the content.
 
-This repo provides just the test suite (HTML and JSON files) and minimal JavaScript code to make it easy to iterate over the tests. You can find a test runner and benchmarking tools in [FIXME](FIXME).
-
 The following topics are covered below:
 
  * [Test suite info](#test-suite-info)
