@@ -7,12 +7,12 @@
   "author": "Matthew Tylee Atkinson",
   "main": "index.js",
   "scripts": {
-    "_build": "node script/includes.js && node script/combineFixturesExpectations.js",
-    "post_build": "echo 'Remember to check the example scripts before publishing.'",
+    "_build": "npx embedme README.md && git add README.md && node script/combineFixturesExpectations.js && git add combined",
     "prebuild": "npm test",
     "build": "npm run --silent _build",
     "build:quick": "npm run --silent _build",
-    "examples": "script/run-all-examples.sh",
+    "example": "node script/example.js",
+    "example:setup": "npm link && npm link page-structural-semantics-scanner-tests",
     "pretest": "npm run validate && eslint .",
     "test": "tap --no-esm --coverage test",
     "test:quick": "tap --no-esm test || true",
@@ -21,17 +21,15 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run build && git add README.md"
+      "pre-commit": "npm run build"
     }
-  },
-  "dependencies": {
-    "jsdom": "~15.1",
-    "tap": "~14.6"
   },
   "devDependencies": {
     "ajv-cli": "~3.0",
     "conventional-changelog-moulded-angular": "github:matatk/conventional-changelog-moulded-angular#0.2.0",
-    "eslint": "~6.2",
-    "husky": "~3.0"
+    "embedme": "~1.17",
+    "eslint": "~6.3",
+    "husky": "~3.0",
+    "tap": "~14.6"
   }
 }

@@ -1,33 +1,17 @@
 'use strict'
 const path = require('path')
-const tap = require('tap')
-const runner = require('./lib/runner')
-const converters = require('./lib/converters')
-const iterator = require('./lib/iterator')
 
-const fixtures = path.join(__dirname, 'fixtures')
-const expectations = path.join(__dirname, 'expectations')
+const getFullPageTests = require('./lib/getFullPageTests')
+const getFullPageTestsInline = require('./lib/getFullPageTestsInline')
 
-function makeRunner(converter) {
-	return function(scanner) {
-		runner(tap, fixtures, expectations, converter, scanner)
-	}
-}
-
-function makeIterator() {
-	return function(runForEachTest) {
-		iterator(fixtures, expectations, runForEachTest)
-	}
-}
+const fixturesDir = path.join(__dirname, 'fixtures')
+const expectationsDir = path.join(__dirname, 'expectations')
 
 module.exports = {
-	'runner': function(converter, scanner) {
-		runner(tap, fixtures, expectations, converter, scanner)
+	'getFullPageTests': function() {
+		return getFullPageTests(fixturesDir, expectationsDir)
 	},
-	'runners': {
-		'landmarks': makeRunner(converters.landmarks),
-		'a11yOutline': makeRunner(converters.a11yOutline)
-	},
-	'converters': converters,
-	'iterator': makeIterator()
+	'getFullPageTestsInline': function() {
+		return getFullPageTestsInline(fixturesDir, expectationsDir)
+	}
 }
