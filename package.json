@@ -17,7 +17,7 @@
     "test": "tap --no-esm --coverage test",
     "test:quick": "tap --no-esm test || true",
     "validate": "ajv test -s schema.json -d 'expectations/*.json' --valid",
-    "version": "npm run build && conventional-changelog-moulded-angular 'Page Structural Semantics Scanner Tests' && git add CHANGELOG.md"
+    "version": "npm run build && standard-version --tag-prefix="
   },
   "husky": {
     "hooks": {
@@ -25,11 +25,11 @@
     }
   },
   "devDependencies": {
-    "ajv-cli": "~3.0",
-    "conventional-changelog-moulded-angular": "github:matatk/conventional-changelog-moulded-angular#0.2.0",
-    "embedme": "~1.17",
-    "eslint": "~6.3",
-    "husky": "~3.0",
-    "tap": "~14.6"
+    "ajv-cli": "^3.1.0",
+    "embedme": "^1.20.0",
+    "eslint": "^6.8.0",
+    "husky": "^4.2.5",
+    "standard-version": "^7.1.0",
+    "tap": "^14.10.7"
   }
 }
