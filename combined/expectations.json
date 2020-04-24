@@ -539,6 +539,18 @@
     },
     "expected": []
   },
+  "ignore-inert-nested": {
+    "meta": {
+      "name": "Ignore nested inert landmarks"
+    },
+    "expected": []
+  },
+  "ignore-inert": {
+    "meta": {
+      "name": "Ignore inert landmarks"
+    },
+    "expected": []
+  },
   "main-alone-is-recognised": {
     "meta": {
       "name": "Main element is recognised"
