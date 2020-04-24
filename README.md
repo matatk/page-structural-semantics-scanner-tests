@@ -136,8 +136,8 @@ The following additional landmark roles defined in the [Digital Publishing WAI-A
 
 If any of the following apply to an element, then the element and its descendants will be excluded from the accessibility tree. Thus any landmark regions the element may have contained would not be exposed.
 
-* Having the `aria-hidden` attribute set to "true"
-* Having the (proposed) `inert` attribute, or having it explicitly set to "true"
+* Having the [`aria-hidden`](https://www.w3.org/TR/wai-aria-1.1/#aria-hidden) attribute set to "true"
+* Having the [proposed `inert` attribute](https://github.com/WICG/inert), or having it explicitly set to "true"
 * CSS `display: none`
 * CSS `visibility: hidden`
 
