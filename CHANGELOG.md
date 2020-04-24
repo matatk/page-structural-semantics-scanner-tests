@@ -1,4 +1,25 @@
-# Page Structural Semantics Scanner Tests changelog
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [0.5.0](https://github.com/matatk/page-structural-semantics-scanner-tests/compare/0.4.0...0.5.0) (2020-04-24)
+
+
+### Features
+
+* Add tests to ignore aria-hidden and inert landmarks ([#25](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/25)) ([e31447f](https://github.com/matatk/page-structural-semantics-scanner-tests/commit/e31447f97f3044779fd80d4511411547acb355bb)), closes [#20](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/20)
+
+
+### Documentation
+
+* **CHANGELOG:** Fix corrupted output ([#28](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/28)) ([e319770](https://github.com/matatk/page-structural-semantics-scanner-tests/commit/e319770513e95ffd1f1a658c9de704ab56f5ee9a)), closes [#23](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/23)
+* **README:** Add note about hiding landmarks ([#26](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/26)) ([59dd0b8](https://github.com/matatk/page-structural-semantics-scanner-tests/commit/59dd0b8790f2635f095a535e1d7714e5137f7acc))
+* **README:** Enhance note about hiding landmarks ([#27](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/27)) ([94e3561](https://github.com/matatk/page-structural-semantics-scanner-tests/commit/94e35613eae4d2669184038c8e717fbb8358f7c0))
+
+
+### Builds
+
+* Switch to standard-version; Bump dependencies ([#24](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/24)) ([bbe1f57](https://github.com/matatk/page-structural-semantics-scanner-tests/commit/bbe1f573f34162469b8c18c7b5ad6e470fbc48f5))
 
 ## [0.4.0](https://github.com/matatk/page-structural-semantics-scanner-tests/compare/0.3.0...0.4.0) (2019-10-11)
 
