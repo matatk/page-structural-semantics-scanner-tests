@@ -527,6 +527,18 @@
       }
     ]
   },
+  "ignore-aria-hidden-nested": {
+    "meta": {
+      "name": "Ignore nested aria-hidden landmarks"
+    },
+    "expected": []
+  },
+  "ignore-aria-hidden": {
+    "meta": {
+      "name": "Ignore aria-hidden landmarks"
+    },
+    "expected": []
+  },
   "main-alone-is-recognised": {
     "meta": {
       "name": "Main element is recognised"
