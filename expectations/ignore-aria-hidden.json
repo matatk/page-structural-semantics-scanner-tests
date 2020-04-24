@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "name": "Ignore aria-hidden landmarks"
+  },
+  "expected": []
+}
