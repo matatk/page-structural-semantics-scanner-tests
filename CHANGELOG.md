@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.0](https://github.com/matatk/page-structural-semantics-scanner-tests/compare/0.5.0...0.6.0) (2021-07-11)
+
+
+### Features
+
+* Support custom fixture and expectation directories ([#30](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/30)) ([9bb8c90](https://github.com/matatk/page-structural-semantics-scanner-tests/commit/9bb8c909e5579e98f65f20ae8503540b71e24dfb))
+
+
+### Chores
+
+* Bump dependencies ([#31](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/31)) ([b4a9a8c](https://github.com/matatk/page-structural-semantics-scanner-tests/commit/b4a9a8c5bfae2c5a93438b897ca252e14600d8ef))
+
+
+### Continuous integrations
+
+* Delete Travis config ([c11e66f](https://github.com/matatk/page-structural-semantics-scanner-tests/commit/c11e66fceb136b5f0fd9d6e03c697306cb763cba))
+* Move to GitHub Actions ([ef15aff](https://github.com/matatk/page-structural-semantics-scanner-tests/commit/ef15affc1faca1312844fea0988e8f2ff47261b7))
+* Run tests only instead of a full build ([f1e8c5d](https://github.com/matatk/page-structural-semantics-scanner-tests/commit/f1e8c5dce789667e7c384bf68e52281be56ca9c0))
+
 ## [0.5.0](https://github.com/matatk/page-structural-semantics-scanner-tests/compare/0.4.0...0.5.0) (2020-04-24)
 
 
