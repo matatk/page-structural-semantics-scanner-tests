@@ -10,26 +10,29 @@
     "_build": "npx embedme README.md && git add README.md && node script/combineFixturesExpectations.js && git add combined",
     "prebuild": "npm test",
     "build": "npm run --silent _build",
-    "build:quick": "npm run --silent _build",
     "example": "node script/example.js",
     "example:setup": "npm link && npm link page-structural-semantics-scanner-tests",
     "pretest": "npm run validate && eslint .",
-    "test": "tap --no-esm --coverage test",
-    "test:quick": "tap --no-esm test || true",
-    "validate": "ajv test -s schema.json -d 'expectations/*.json' --valid",
-    "version": "npm run build && standard-version --tag-prefix="
+    "test": "tap test",
+    "validate": "ajv test -s schema.json -d 'expectations/*.json' --valid -c ajv-formats",
+    "version": "npm run build && standard-version --tag-prefix=",
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
       "pre-commit": "npm run build"
     }
   },
+  "tap": {
+    "check-coverage": false
+  },
   "devDependencies": {
-    "ajv-cli": "^3.1.0",
-    "embedme": "^1.20.0",
-    "eslint": "^6.8.0",
-    "husky": "^4.2.5",
-    "standard-version": "^7.1.0",
-    "tap": "^14.10.7"
+    "ajv-cli": "^5.0.0",
+    "ajv-formats": "^2.1.0",
+    "embedme": "^1.22.0",
+    "eslint": "^7.30.0",
+    "husky": "^7.0.0",
+    "standard-version": "^9.3.0",
+    "tap": "^15.0.9"
   }
 }
