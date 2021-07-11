@@ -13,5 +13,11 @@ module.exports = {
 	},
 	'getFullPageTestsInline': function() {
 		return getFullPageTestsInline(fixturesDir, expectationsDir)
+	},
+	'getFullPageTestsFrom': function(fixturesDir, expectationsDir) {
+		return getFullPageTests(fixturesDir, expectationsDir)
+	},
+	'getFullPageTestsInlineFrom': function(fixturesDir, expectationsDir) {
+		return getFullPageTestsInline(fixturesDir, expectationsDir)
 	}
 }

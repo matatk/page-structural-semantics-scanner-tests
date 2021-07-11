@@ -68,6 +68,11 @@ Two functions are provided, allowing you to control whether you want the file pa
 
 There are no convenience functions for iterating over the combined tests mentioned above—it makes most sense to just load them directly.
 
+Finally, there are two more convenience functions that mirror those above and allow you to specify custom fixture and expectation directories. These are useful if you have extra custom test cases in the same format that you wish to use.
+
+ * `getFullPageTestsFrom(fixturesDir, expectationsDir)`
+ * `getFullPageTestsInlineFrom(fixturesDir, expectationsDir)`
+
 Support for landmarks
 ---------------------
 
