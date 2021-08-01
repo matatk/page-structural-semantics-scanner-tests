@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.7.0](https://github.com/matatk/page-structural-semantics-scanner-tests/compare/0.6.0...0.7.0) (2021-08-01)
+
+
+### Features
+
+* Ignore dotfiles and non-HTML files ([#33](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/33)) ([b169396](https://github.com/matatk/page-structural-semantics-scanner-tests/commit/b16939648a7e2a04252d1755dd847f41962d5f75))
+
 ## [0.6.0](https://github.com/matatk/page-structural-semantics-scanner-tests/compare/0.5.0...0.6.0) (2021-07-11)
 
 
