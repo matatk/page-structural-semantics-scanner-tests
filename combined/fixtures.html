@@ -388,6 +388,15 @@
 			<p>A region with a visible name is grand.</p>
 		</div>
 	</div>
+<div data-test-id="role-ignore-leading-space">
+		<div role=" contentinfo"></div>
+	</div>
+<div data-test-id="role-skip-invalid-token">
+		<div role="foo banner"></div>
+	</div>
+<div data-test-id="role-use-first-valid-token">
+		<div role="navigation main"></div>
+	</div>
 <div data-test-id="roles-land">
 <div id="banner" role="banner">banner</div>
 <div id="navigation" role="navigation">navigation</div>

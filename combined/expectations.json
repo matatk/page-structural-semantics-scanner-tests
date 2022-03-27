@@ -741,6 +741,78 @@
       }
     ]
   },
+  "role-ignore-leading-space": {
+    "meta": {
+      "name": "Leading space in the \"role\" attribute value must be ignored",
+      "links": [
+        {
+          "url": "https://github.com/matatk/landmarks/issues/464",
+          "text": "Originating bug report"
+        },
+        {
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#host_general_role",
+          "text": "Requirements for the \"role\" attribute"
+        }
+      ]
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "contentinfo",
+        "roleDescription": null,
+        "label": null,
+        "selector": "body > div"
+      }
+    ]
+  },
+  "role-skip-invalid-token": {
+    "meta": {
+      "name": "Invalid roles in the token list must be ignored",
+      "links": [
+        {
+          "url": "https://github.com/matatk/landmarks/issues/464",
+          "text": "Originating bug report"
+        },
+        {
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#host_general_role",
+          "text": "Requirements for the \"role\" attribute"
+        }
+      ]
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "banner",
+        "roleDescription": null,
+        "label": null,
+        "selector": "body > div"
+      }
+    ]
+  },
+  "role-use-first-valid-token": {
+    "meta": {
+      "name": "The first valid \"role\" value in the list must be used",
+      "links": [
+        {
+          "url": "https://github.com/matatk/landmarks/issues/464",
+          "text": "Originating bug report"
+        },
+        {
+          "url": "https://www.w3.org/TR/wai-aria-1.1/#host_general_role",
+          "text": "Requirements for the \"role\" attribute"
+        }
+      ]
+    },
+    "expected": [
+      {
+        "type": "landmark",
+        "role": "navigation",
+        "roleDescription": null,
+        "label": null,
+        "selector": "body > div"
+      }
+    ]
+  },
   "roles-land": {
     "meta": {
       "name": "ARIA landmark role use example from Steve Faulkner"

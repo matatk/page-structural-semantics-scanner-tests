@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "name": "Invalid roles in the token list must be ignored",
+    "links": [
+      {
+        "url": "https://github.com/matatk/landmarks/issues/464",
+        "text": "Originating bug report"
+      },
+      {
+        "url": "https://www.w3.org/TR/wai-aria-1.1/#host_general_role",
+        "text": "Requirements for the \"role\" attribute"
+      }
+    ]
+  },
+  "expected": [
+    {
+      "type": "landmark",
+      "role": "banner",
+      "roleDescription": null,
+      "label": null,
+      "selector": "body > div"
+    }
+  ]
+}
