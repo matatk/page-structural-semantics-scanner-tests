@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.8.0](https://github.com/matatk/page-structural-semantics-scanner-tests/compare/0.7.0...0.8.0) (2022-03-27)
+
+
+### Features
+
+* Add "role" attribute token list tests ([#36](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/36)) ([a66ea9f](https://github.com/matatk/page-structural-semantics-scanner-tests/commit/a66ea9f97aa7f6ee5aef8db51ecf8df8a8fbb931)), closes [matatk/landmarks#464](https://github.com/matatk/landmarks/issues/464)
+
+
+### Chores
+
+* Bumps ([#37](https://github.com/matatk/page-structural-semantics-scanner-tests/issues/37)) ([21cd023](https://github.com/matatk/page-structural-semantics-scanner-tests/commit/21cd023701558685e0498367d8965bada86ec454))
+
 ## [0.7.0](https://github.com/matatk/page-structural-semantics-scanner-tests/compare/0.6.0...0.7.0) (2021-08-01)
 
 
